@@ -1,1 +1,1236 @@
-
+{
+  "quiz_title": "ICT Quiz - 10 Levels",
+  "description": "10 levels, elk met een ICT-thema. Per level 6 hoofdvragen + 2 backup-vragen.",
+  "levels": [
+    {
+      "level": 1,
+      "theme": "Programmeerfundamenten",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Wat is het resultaat van `len('Python')` in Python?",
+          "choices": {
+            "A": "5",
+            "B": "6",
+            "C": "7",
+            "D": "8"
+          },
+          "correct_answer": "B",
+          "explanation": "De string 'Python' heeft 6 tekens.",
+          "difficulty": "easy",
+          "tags": ["python", "strings", "lengte"],
+          "is_backup": false
+        },
+        {
+          "id": 2,
+          "question": "Welke datatypes zijn immutabel in Python?",
+          "choices": {
+            "A": "list en dict",
+            "B": "set en list",
+            "C": "tuple en str",
+            "D": "dict en set"
+          },
+          "correct_answer": "C",
+          "explanation": "Tuples en strings zijn immutabel; lists, dicts en sets zijn veranderbaar.",
+          "difficulty": "easy",
+          "tags": ["python", "datatypes"],
+          "is_backup": false
+        },
+        {
+          "id": 3,
+          "question": "Wat doet het sleutelwoord `return` in een functie?",
+          "choices": {
+            "A": "Start de functie",
+            "B": "Geeft een waarde terug en stopt de functie",
+            "C": "Print een waarde naar de console",
+            "D": "Declareert een variabele"
+          },
+          "correct_answer": "B",
+          "explanation": "`return` geeft een waarde terug aan de caller en beëindigt de functie.",
+          "difficulty": "easy",
+          "tags": ["functions"],
+          "is_backup": false
+        },
+        {
+          "id": 4,
+          "question": "Welke van de volgende is GEEN best practice bij naamgeving van variabelen?",
+          "choices": {
+            "A": "Gebruik betekenisvolle namen",
+            "B": "Gebruik korte cryptische namen overal",
+            "C": "Gebruik snake_case in Python",
+            "D": "Vermijd globale variabelen waar mogelijk"
+          },
+          "correct_answer": "B",
+          "explanation": "Kort en cryptisch maakt code moeilijk te begrijpen; betekenisvolle namen zijn aan te raden.",
+          "difficulty": "easy",
+          "tags": ["best_practices"],
+          "is_backup": false
+        },
+        {
+          "id": 5,
+          "question": "Wat is de output van: `print(3 * 'ab')` ?",
+          "choices": {
+            "A": "'ababab'",
+            "B": "'ab3'",
+            "C": "'ab ab ab'",
+            "D": "TypeError"
+          },
+          "correct_answer": "A",
+          "explanation": "String vermenigvuldiging herhaalt de string 3 keer.",
+          "difficulty": "easy",
+          "tags": ["strings", "python"],
+          "is_backup": false
+        },
+        {
+          "id": 6,
+          "question": "Welke control-structure gebruik je voor herhaalde iteraties?",
+          "choices": {
+            "A": "if",
+            "B": "for / while",
+            "C": "def",
+            "D": "return"
+          },
+          "correct_answer": "B",
+          "explanation": "Voor loops en while loops gebruik je herhaling/iteratie.",
+          "difficulty": "easy",
+          "tags": ["control_flow"],
+          "is_backup": false
+        },
+        {
+          "id": 7,
+          "question": "Wat is het effect van `x += 1` in veel programmeertalen?",
+          "choices": {
+            "A": "Vermenigvuldigt x met 1",
+            "B": "Verhoogt x met 1",
+            "C": "Stelt x in op 1",
+            "D": "Maakt x opnieuw"
+          },
+          "correct_answer": "B",
+          "explanation": "`x += 1` is shorthand voor `x = x + 1`.",
+          "difficulty": "easy",
+          "tags": ["operators"],
+          "is_backup": true
+        },
+        {
+          "id": 8,
+          "question": "Welke van deze is een voorbeeld van polymorfisme?",
+          "choices": {
+            "A": "Twee variabelen met dezelfde naam",
+            "B": "Een functie die met verschillende types werkt",
+            "C": "Een infinite loop",
+            "D": "Een lokale variabele"
+          },
+          "correct_answer": "B",
+          "explanation": "Polymorfisme: één interface, meerdere implementaties (bv. method overloading/overriding).",
+          "difficulty": "medium",
+          "tags": ["oop", "concepten"],
+          "is_backup": true
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "theme": "Datastructuren",
+      "questions": [
+        {
+          "id": 9,
+          "question": "Welk datastructuur heeft LIFO-gedrag?",
+          "choices": {
+            "A": "Queue",
+            "B": "Stack",
+            "C": "Graph",
+            "D": "Hash table"
+          },
+          "correct_answer": "B",
+          "explanation": "Stack werkt Last-In-First-Out (LIFO).",
+          "difficulty": "easy",
+          "tags": ["stack", "concepts"],
+          "is_backup": false
+        },
+        {
+          "id": 10,
+          "question": "Wat is de gemiddelde zoekcomplexiteit in een hash table (hash map)?",
+          "choices": {
+            "A": "O(1)",
+            "B": "O(log n)",
+            "C": "O(n)",
+            "D": "O(n log n)"
+          },
+          "correct_answer": "A",
+          "explanation": "Gemiddeld is zoeken O(1), afhankelijk van collisions kan het slechter zijn.",
+          "difficulty": "medium",
+          "tags": ["hashmap", "complexity"],
+          "is_backup": false
+        },
+        {
+          "id": 11,
+          "question": "Wat is het voordeel van een linked list ten opzichte van een array?",
+          "choices": {
+            "A": "Snel random access",
+            "B": "Eenvoudig insert/delete in het midden",
+            "C": "Minder geheugen overhead altijd",
+            "D": "Beter sorteerbaar"
+          },
+          "correct_answer": "B",
+          "explanation": "Linked lists ondersteunen efficiëntere inserts/deletes in het midden (zonder verplaatsen van elementen).",
+          "difficulty": "medium",
+          "tags": ["linked_list"],
+          "is_backup": false
+        },
+        {
+          "id": 12,
+          "question": "Welke structuur gebruik je om eerst binnenkomende taken FIFO te verwerken?",
+          "choices": {
+            "A": "Stack",
+            "B": "Queue",
+            "C": "Set",
+            "D": "Tree"
+          },
+          "correct_answer": "B",
+          "explanation": "Queue is First-In-First-Out (FIFO).",
+          "difficulty": "easy",
+          "tags": ["queue"],
+          "is_backup": false
+        },
+        {
+          "id": 13,
+          "question": "Wat is de hoogte (height) van een gebalanceerde binaire zoekboom met n knopen ongeveer?",
+          "choices": {
+            "A": "O(n)",
+            "B": "O(log n)",
+            "C": "O(n^2)",
+            "D": "O(1)"
+          },
+          "correct_answer": "B",
+          "explanation": "Gebalanceerde bomen (AVL, RB) hebben hoogte O(log n).",
+          "difficulty": "medium",
+          "tags": ["trees", "bst"],
+          "is_backup": false
+        },
+        {
+          "id": 14,
+          "question": "Welke datastructuur is het meest geschikt voor prioriteits-gebaseerde scheduling?",
+          "choices": {
+            "A": "Heap",
+            "B": "Array",
+            "C": "Linked list",
+            "D": "Graph"
+          },
+          "correct_answer": "A",
+          "explanation": "Heaps (priority queues) zijn ideaal voor prioriteitsoperaties.",
+          "difficulty": "medium",
+          "tags": ["heap", "priority_queue"],
+          "is_backup": false
+        },
+        {
+          "id": 15,
+          "question": "Wat is collision-resolutie in een hash table?",
+          "choices": {
+            "A": "Opslag van meerdere entries in dezelfde bucket",
+            "B": "Verwijderen van element",
+            "C": "Zoeken naar minimum",
+            "D": "Encryptie van keys"
+          },
+          "correct_answer": "A",
+          "explanation": "Collision resolution behandelt meerdere keys die naar dezelfde bucket hash'en (bv. chaining of open addressing).",
+          "difficulty": "medium",
+          "tags": ["hashing"],
+          "is_backup": true
+        },
+        {
+          "id": 16,
+          "question": "Welk access patroon is slecht voor cache prestaties?",
+          "choices": {
+            "A": "Sequentieel",
+            "B": "Random",
+            "C": "Streaming",
+            "D": "Lineair"
+          },
+          "correct_answer": "B",
+          "explanation": "Random access resulteert vaak in vele cache misses, slechtere prestaties.",
+          "difficulty": "medium",
+          "tags": ["performance", "cache"],
+          "is_backup": true
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "theme": "Algoritmen",
+      "questions": [
+        {
+          "id": 17,
+          "question": "Wat is de tijdscomplexiteit van mergesort in het slechtste geval?",
+          "choices": {
+            "A": "O(n)",
+            "B": "O(n log n)",
+            "C": "O(n^2)",
+            "D": "O(log n)"
+          },
+          "correct_answer": "B",
+          "explanation": "Merge sort heeft altijd O(n log n) complexiteit.",
+          "difficulty": "medium",
+          "tags": ["sorting"],
+          "is_backup": false
+        },
+        {
+          "id": 18,
+          "question": "Welk algoritme is geschikt om de kortste pad in een graaf met positieve gewichten te vinden?",
+          "choices": {
+            "A": "Bellman-Ford",
+            "B": "Dijkstra",
+            "C": "Kruskal",
+            "D": "Prim"
+          },
+          "correct_answer": "B",
+          "explanation": "Dijkstra is efficiënt voor grafen met niet-negatieve gewichten.",
+          "difficulty": "medium",
+          "tags": ["graphs", "shortest_path"],
+          "is_backup": false
+        },
+        {
+          "id": 19,
+          "question": "Wat doet dynamic programming (DP) typisch?",
+          "choices": {
+            "A": "Recurseert zonder opslag",
+            "B": "Gebruikt memoization/tabulation om overlappende subproblemen te vermijden",
+            "C": "Zorgt voor randomisatie",
+            "D": "Vervangt greedy methodes altijd"
+          },
+          "correct_answer": "B",
+          "explanation": "DP gebruikt opslag (memo) voor overlappende subproblemen.",
+          "difficulty": "medium",
+          "tags": ["dp"],
+          "is_backup": false
+        },
+        {
+          "id": 20,
+          "question": "Welk algoritme is gebruikt voor minimum spanning tree (MST)?",
+          "choices": {
+            "A": "Dijkstra",
+            "B": "Kruskal",
+            "C": "BFS",
+            "D": "DFS"
+          },
+          "correct_answer": "B",
+          "explanation": "Kruskal (en Prim) worden gebruikt voor MST.",
+          "difficulty": "easy",
+          "tags": ["graphs"],
+          "is_backup": false
+        },
+        {
+          "id": 21,
+          "question": "Wat is backtracking?",
+          "choices": {
+            "A": "Parallel algoritme",
+            "B": "Een brute-force search die oplossingen stap voor stap bouwt en terugkeert bij falen",
+            "C": "Greedy methode",
+            "D": "Een caching techniek"
+          },
+          "correct_answer": "B",
+          "explanation": "Backtracking bouwt oplossingen en backtrackt wanneer een pad niet leidt tot geldige oplossing.",
+          "difficulty": "medium",
+          "tags": ["search", "backtracking"],
+          "is_backup": false
+        },
+        {
+          "id": 22,
+          "question": "Wat is de worst-case complexiteit van quicksort (zonder random pivot)?",
+          "choices": {
+            "A": "O(n)",
+            "B": "O(n log n)",
+            "C": "O(n^2)",
+            "D": "O(log n)"
+          },
+          "correct_answer": "C",
+          "explanation": "Quicksort kan O(n^2) bereiken bij slecht gekozen pivots (bijv. al gesorteerde input).",
+          "difficulty": "medium",
+          "tags": ["sorting"],
+          "is_backup": false
+        },
+        {
+          "id": 23,
+          "question": "Wat betekent 'greedy algorithm'?",
+          "choices": {
+            "A": "Zorgt altijd voor globale optimum",
+            "B": "Neemt lokale optimum keuzes in de hoop op globaal optimum",
+            "C": "Gebruikt dynamic programming",
+            "D": "Is hetzelfde als backtracking"
+          },
+          "correct_answer": "B",
+          "explanation": "Greedy neemt de beste lokale keuze bij elk stap; garandeert niet altijd globaal optimum.",
+          "difficulty": "medium",
+          "tags": ["algorithms"],
+          "is_backup": true
+        },
+        {
+          "id": 24,
+          "question": "Wanneer gebruik je BFS in een ongewogen graaf?",
+          "choices": {
+            "A": "Als je kortste pad in aantal stappen wilt",
+            "B": "Alleen voor gewogen paden",
+            "C": "Voor minimal spanning tree",
+            "D": "Voor topologische sortering"
+          },
+          "correct_answer": "A",
+          "explanation": "BFS geeft het kortste pad in termen van aantal edges in een ongewogen graaf.",
+          "difficulty": "easy",
+          "tags": ["graphs", "bfs"],
+          "is_backup": true
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "theme": "Databases",
+      "questions": [
+        {
+          "id": 25,
+          "question": "Wat betekent SQL?",
+          "choices": {
+            "A": "Structured Query Language",
+            "B": "Simple Query Language",
+            "C": "Sequential Query List",
+            "D": "System Query Language"
+          },
+          "correct_answer": "A",
+          "explanation": "SQL staat voor Structured Query Language.",
+          "difficulty": "easy",
+          "tags": ["sql"],
+          "is_backup": false
+        },
+        {
+          "id": 26,
+          "question": "Welk SQL-commando gebruik je om rijen te selecteren?",
+          "choices": {
+            "A": "INSERT",
+            "B": "DELETE",
+            "C": "SELECT",
+            "D": "CREATE"
+          },
+          "correct_answer": "C",
+          "explanation": "SELECT haalt rijen op uit tabellen.",
+          "difficulty": "easy",
+          "tags": ["sql"],
+          "is_backup": false
+        },
+        {
+          "id": 27,
+          "question": "Wat is normalisatie in databases?",
+          "choices": {
+            "A": "Het dupliceren van data",
+            "B": "Structureren van data om redundantie te verminderen",
+            "C": "Encryptie van velden",
+            "D": "Backups maken"
+          },
+          "correct_answer": "B",
+          "explanation": "Normalisatie reduceert redundantie en verbetert integriteit.",
+          "difficulty": "medium",
+          "tags": ["database_design"],
+          "is_backup": false
+        },
+        {
+          "id": 28,
+          "question": "Welk type join geeft rijen die in beide tabellen voorkomen?",
+          "choices": {
+            "A": "LEFT JOIN",
+            "B": "RIGHT JOIN",
+            "C": "INNER JOIN",
+            "D": "FULL OUTER JOIN"
+          },
+          "correct_answer": "C",
+          "explanation": "INNER JOIN geeft alleen rijen die matchen in beide tabellen.",
+          "difficulty": "medium",
+          "tags": ["sql", "joins"],
+          "is_backup": false
+        },
+        {
+          "id": 29,
+          "question": "Wat is ACID in relationele databases?",
+          "choices": {
+            "A": "Atomicity, Consistency, Isolation, Durability",
+            "B": "Access, Control, Integrity, Data",
+            "C": "Always Consistent In Data",
+            "D": "Atomicity, Concurrency, Indexing, Durability"
+          },
+          "correct_answer": "A",
+          "explanation": "ACID staat voor Atomicity, Consistency, Isolation, Durability.",
+          "difficulty": "medium",
+          "tags": ["transactions"],
+          "is_backup": false
+        },
+        {
+          "id": 30,
+          "question": "Welk index-type is typisch voor snelle equality searches?",
+          "choices": {
+            "A": "B-tree",
+            "B": "Sequential scan",
+            "C": "Heap file",
+            "D": "Temporary table"
+          },
+          "correct_answer": "A",
+          "explanation": "B-tree indexen zijn goed voor range en equality searches.",
+          "difficulty": "medium",
+          "tags": ["indexing"],
+          "is_backup": false
+        },
+        {
+          "id": 31,
+          "question": "Wat is denormalisatie?",
+          "choices": {
+            "A": "Het opsplitsen van tabellen",
+            "B": "Het samenvoegen van gegevens om performance te verbeteren",
+            "C": "Encryptie",
+            "D": "Transacties uitschakelen"
+          },
+          "correct_answer": "B",
+          "explanation": "Denormalisatie voegt soms redundantie toe om leesprestaties te verbeteren.",
+          "difficulty": "medium",
+          "tags": ["database_design"],
+          "is_backup": true
+        },
+        {
+          "id": 32,
+          "question": "Welk commando creëert een nieuwe tabel in SQL?",
+          "choices": {
+            "A": "CREATE TABLE",
+            "B": "NEW TABLE",
+            "C": "MAKE TABLE",
+            "D": "INIT TABLE"
+          },
+          "correct_answer": "A",
+          "explanation": "CREATE TABLE is standard SQL voor het maken van tabellen.",
+          "difficulty": "easy",
+          "tags": ["sql"],
+          "is_backup": true
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "theme": "Netwerken",
+      "questions": [
+        {
+          "id": 33,
+          "question": "Welk OSI-laag model zit 'Transport' op?",
+          "choices": {
+            "A": "Laag 2",
+            "B": "Laag 3",
+            "C": "Laag 4",
+            "D": "Laag 5"
+          },
+          "correct_answer": "C",
+          "explanation": "Transport is OSI-laag 4 (bv. TCP/UDP).",
+          "difficulty": "easy",
+          "tags": ["osi", "tcp_udp"],
+          "is_backup": false
+        },
+        {
+          "id": 34,
+          "question": "Welk protocol gebruikt betrouwbare, volgorde-gegarandeerde communicatie?",
+          "choices": {
+            "A": "UDP",
+            "B": "ICMP",
+            "C": "TCP",
+            "D": "ARP"
+          },
+          "correct_answer": "C",
+          "explanation": "TCP is connection-oriented en garandeert volgorde en betrouwbaarheid.",
+          "difficulty": "easy",
+          "tags": ["tcp"],
+          "is_backup": false
+        },
+        {
+          "id": 35,
+          "question": "Wat is het doel van een subnet mask?",
+          "choices": {
+            "A": "Versleutelen van verkeer",
+            "B": "Bepalen welke hostbits bij het netwerk horen",
+            "C": "DNS-resolving",
+            "D": "QoS prioritering"
+          },
+          "correct_answer": "B",
+          "explanation": "Subnetmask bepaalt welke delen van een IP adres netwerk- resp. hostbits zijn.",
+          "difficulty": "medium",
+          "tags": ["ip", "subnet"],
+          "is_backup": false
+        },
+        {
+          "id": 36,
+          "question": "Welk poortnummer gebruikt HTTP standaard?",
+          "choices": {
+            "A": "21",
+            "B": "22",
+            "C": "80",
+            "D": "443"
+          },
+          "correct_answer": "C",
+          "explanation": "HTTP gebruikt standaard poort 80; HTTPS gebruikt 443.",
+          "difficulty": "easy",
+          "tags": ["http"],
+          "is_backup": false
+        },
+        {
+          "id": 37,
+          "question": "Wat doet NAT (Network Address Translation)?",
+          "choices": {
+            "A": "Verandert MAC-adressen",
+            "B": "Vertalen private IP-adressen naar publieke IP-adressen",
+            "C": "Encrypt netwerkverkeer",
+            "D": "Verhoogt bandbreedte"
+          },
+          "correct_answer": "B",
+          "explanation": "NAT vertaalt interne/private IPs naar een openbaar IP voor internettoegang.",
+          "difficulty": "medium",
+          "tags": ["nat"],
+          "is_backup": false
+        },
+        {
+          "id": 38,
+          "question": "Wat is latency in netwerken?",
+          "choices": {
+            "A": "De hoeveelheid data per seconde",
+            "B": "De vertraging/tijd voor een pakket om te reizen",
+            "C": "Het aantal fouten per minuut",
+            "D": "De maximale throughput"
+          },
+          "correct_answer": "B",
+          "explanation": "Latency is tijdsvertraging tussen zenden en ontvangen.",
+          "difficulty": "easy",
+          "tags": ["network_performance"],
+          "is_backup": false
+        },
+        {
+          "id": 39,
+          "question": "Welke tool gebruik je om netwerkconnectiviteit te testen op IP-niveau?",
+          "choices": {
+            "A": "ping",
+            "B": "ls",
+            "C": "grep",
+            "D": "chmod"
+          },
+          "correct_answer": "A",
+          "explanation": "Ping stuurt ICMP echo requests om bereikbaarheid te testen.",
+          "difficulty": "easy",
+          "tags": ["tools"],
+          "is_backup": true
+        },
+        {
+          "id": 40,
+          "question": "Wat doet een DNS-server?",
+          "choices": {
+            "A": "Verbindt twee hosts direct",
+            "B": "Vertaal domeinnamen naar IP-adressen",
+            "C": "Versleutelt verkeer",
+            "D": "Beheert routers"
+          },
+          "correct_answer": "B",
+          "explanation": "DNS vertaalt domeinnamen naar de bijbehorende IP-adressen.",
+          "difficulty": "easy",
+          "tags": ["dns"],
+          "is_backup": true
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "theme": "Security",
+      "questions": [
+        {
+          "id": 41,
+          "question": "Wat betekent 'phishing'?",
+          "choices": {
+            "A": "Het scannen van poorten",
+            "B": "Social engineering via valse e-mails om gegevens te stelen",
+            "C": "Encryptie van bestanden",
+            "D": "Back-up maken"
+          },
+          "correct_answer": "B",
+          "explanation": "Phishing misleidt gebruikers om gevoelige info vrij te geven.",
+          "difficulty": "easy",
+          "tags": ["security", "phishing"],
+          "is_backup": false
+        },
+        {
+          "id": 42,
+          "question": "Welk mechanisme beschermt data in transit op het web?",
+          "choices": {
+            "A": "HTTP",
+            "B": "FTP",
+            "C": "TLS/SSL",
+            "D": "SMTP"
+          },
+          "correct_answer": "C",
+          "explanation": "TLS/SSL versleutelt verkeer (bv. HTTPS).",
+          "difficulty": "easy",
+          "tags": ["tls", "https"],
+          "is_backup": false
+        },
+        {
+          "id": 43,
+          "question": "Wat is het doel van two-factor authentication (2FA)?",
+          "choices": {
+            "A": "Maakt wachtwoorden onnodig",
+            "B": "Voegt een tweede verificatielaag toe naast het wachtwoord",
+            "C": "Versnelt login",
+            "D": "Vervangt encryptie"
+          },
+          "correct_answer": "B",
+          "explanation": "2FA combineert iets wat je weet (pwd) met iets wat je hebt/ben (token, biometrie).",
+          "difficulty": "medium",
+          "tags": ["auth"],
+          "is_backup": false
+        },
+        {
+          "id": 44,
+          "question": "Welk type aanval probeert veel verbindingen te openen om een dienst te overbelasten?",
+          "choices": {
+            "A": "Phishing",
+            "B": "DDoS",
+            "C": "SQL Injection",
+            "D": "XSS"
+          },
+          "correct_answer": "B",
+          "explanation": "DDoS (Distributed Denial of Service) probeert resources uit te putten via massa-aanvragen.",
+          "difficulty": "medium",
+          "tags": ["ddos"],
+          "is_backup": false
+        },
+        {
+          "id": 45,
+          "question": "Wat is SQL-injectie?",
+          "choices": {
+            "A": "Injecteren van HTML",
+            "B": "Client-side scripting",
+            "C": "Het invoegen van schadelijke SQL in invoervelden",
+            "D": "Encryptie van DB"
+          },
+          "correct_answer": "C",
+          "explanation": "SQL-injectie misbruikt onbeveiligde inputs om ongewenste queries uit te voeren.",
+          "difficulty": "medium",
+          "tags": ["web_security", "sql_injection"],
+          "is_backup": false
+        },
+        {
+          "id": 46,
+          "question": "Welk principe beperkt toegang tot wat nodig is voor iemands taak?",
+          "choices": {
+            "A": "Least Privilege",
+            "B": "Open Access",
+            "C": "Full Admin",
+            "D": "Guest Only"
+          },
+          "correct_answer": "A",
+          "explanation": "Least privilege geeft minimale benodigde rechten toe.",
+          "difficulty": "medium",
+          "tags": ["security_principles"],
+          "is_backup": false
+        },
+      {
+          "id": 47,
+          "question": "Wat betekent 'hashing' van een wachtwoord?",
+          "choices": {
+            "A": "Encryptie met private key",
+            "B": "Een one-way transformatie naar een vaste lengte",
+            "C": "Opslaan in plaintext",
+            "D": "Versturen via e-mail"
+          },
+          "correct_answer": "B",
+          "explanation": "Hashing is een eenrichtingsfunctie; handig voor veilige opslag van wachtwoorden.",
+          "difficulty": "medium",
+          "tags": ["hashing", "passwords"],
+          "is_backup": true
+        },
+        {
+          "id": 48,
+          "question": "Welk begrip beschrijft het veiligstellen van data tegen verlies door backups?",
+          "choices": {
+            "A": "Availability",
+            "B": "Confidentiality",
+            "C": "Integrity",
+            "D": "Redundancy / Backup"
+          },
+          "correct_answer": "D",
+          "explanation": "Backups en redundantie zorgen dat data hersteld kan worden na verlies.",
+          "difficulty": "easy",
+          "tags": ["backup"],
+          "is_backup": true
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "theme": "Operating Systems",
+      "questions": [
+        {
+          "id": 49,
+          "question": "Wat is virtual memory?",
+          "choices": {
+            "A": "Extra fysieke RAM",
+            "B": "Gebruik van schijfruimte als uitbreiding van RAM",
+            "C": "GPU geheugen",
+            "D": "Cache op CPU"
+          },
+          "correct_answer": "B",
+          "explanation": "Virtual memory gebruikt disk (swap) als uitbreiding van RAM.",
+          "difficulty": "medium",
+          "tags": ["memory"],
+          "is_backup": false
+        },
+        {
+          "id": 50,
+          "question": "Welke scheduler-klasse is vaak gebruikt voor batch processing?",
+          "choices": {
+            "A": "Round-robin",
+            "B": "FIFO",
+            "C": "SJF (Shortest Job First)",
+            "D": "Priority with aging"
+          },
+          "correct_answer": "C",
+          "explanation": "SJF minimaliseert gemiddelde wachttijd in batch workloads (theoretisch).",
+          "difficulty": "medium",
+          "tags": ["scheduling"],
+          "is_backup": false
+        },
+        {
+          "id": 51,
+          "question": "Wat is een systeemoproep (system call)?",
+          "choices": {
+            "A": "Een API-oproep in userland",
+            "B": "Een request van gebruiker naar kernel voor diensten",
+            "C": "Een netwerkpakket",
+            "D": "Een file read"
+          },
+          "correct_answer": "B",
+          "explanation": "System call schakelt van user mode naar kernel mode om OS-diensten te gebruiken.",
+          "difficulty": "easy",
+          "tags": ["syscalls"],
+          "is_backup": false
+        },
+        {
+          "id": 52,
+          "question": "Wat doet een context switch?",
+          "choices": {
+            "A": "Schakelt van ene proces naar andere en bewaart/restaureert registers",
+            "B": "Voegt geheugen toe",
+            "C": "Formatteert schijf",
+            "D": "Verhoogt prioriteit"
+          },
+          "correct_answer": "A",
+          "explanation": "Context switch wisselt CPU-state tussen processen/threads.",
+          "difficulty": "medium",
+          "tags": ["processes", "threads"],
+          "is_backup": false
+        },
+        {
+          "id": 53,
+          "question": "Wat is 'deadlock' in OS termen?",
+          "choices": {
+            "A": "Wanneer een proces crasht",
+            "B": "Wanneer twee of meer processen op elkaar wachten en niet verder kunnen",
+            "C": "Wanneer geheugen vol is",
+            "D": "Wanneer CPU 100% gebruikt wordt"
+          },
+          "correct_answer": "B",
+          "explanation": "Deadlock: circulair wachten; vereist detectie of preventie.",
+          "difficulty": "medium",
+          "tags": ["deadlock"],
+          "is_backup": false
+        },
+        {
+          "id": 54,
+          "question": "Wat is het verschil tussen thread en process?",
+          "choices": {
+            "A": "Threads hebben hun eigen adresruimte",
+            "B": "Processen delen stacks",
+            "C": "Threads delen adresruimte van hun process",
+            "D": "Processen zijn lichter dan threads"
+          },
+          "correct_answer": "C",
+          "explanation": "Threads delen hetzelfde adresruimte binnen hun process; processen hebben aparte adressen.",
+          "difficulty": "medium",
+          "tags": ["concurrency"],
+          "is_backup": false
+        },
+        {
+          "id": 55,
+          "question": "Wat is swap space?",
+          "choices": {
+            "A": "CPU cache",
+            "B": "Schijfgebied gebruikt voor virtual memory",
+            "C": "GPU geheugen",
+            "D": "Netwerkbuffer"
+          },
+          "correct_answer": "B",
+          "explanation": "Swap is diskruimte gebruikt als uitbreiding van RAM (partitie of bestand).",
+          "difficulty": "easy",
+          "tags": ["memory"],
+          "is_backup": true
+        },
+        {
+          "id": 56,
+          "question": "Welk commando toont actieve processen in Linux?",
+          "choices": {
+            "A": "ls",
+            "B": "ps / top",
+            "C": "cd",
+            "D": "mkdir"
+          },
+          "correct_answer": "B",
+          "explanation": "`ps`, `top` tonen processen en resourcegebruik.",
+          "difficulty": "easy",
+          "tags": ["linux_tools"],
+          "is_backup": true
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "theme": "Web Development",
+      "questions": [
+        {
+          "id": 57,
+          "question": "Wat is REST?",
+          "choices": {
+            "A": "Een database",
+            "B": "Een architectuurstijl voor web-API's",
+            "C": "Een frontend framework",
+            "D": "Een webserver"
+          },
+          "correct_answer": "B",
+          "explanation": "REST is een stijl/constraint set voor gedistribueerde webservices (resources, stateless, HTTP methods).",
+          "difficulty": "easy",
+          "tags": ["api", "rest"],
+          "is_backup": false
+        },
+        {
+          "id": 58,
+          "question": "Welke HTTP-methoden zijn gebruikelijk voor CRUD?",
+          "choices": {
+            "A": "GET, POST, PUT, DELETE",
+            "B": "OPEN, CLOSE, READ, WRITE",
+            "C": "CONNECT, TRACE, OPTIONS, PATCH",
+            "D": "LIST, ADD, UPDATE, REMOVE"
+          },
+          "correct_answer": "A",
+          "explanation": "CRUD mappen doorgaans naar GET (read), POST (create), PUT/PATCH (update), DELETE (delete).",
+          "difficulty": "easy",
+          "tags": ["http"],
+          "is_backup": false
+        },
+        {
+          "id": 59,
+          "question": "Wat is Cross-Origin Resource Sharing (CORS)?",
+          "choices": {
+            "A": "Een database feature",
+            "B": "Een browser security policy om cross-origin requests te controleren",
+            "C": "Een CSS framework",
+            "D": "Een server-side templating engine"
+          },
+          "correct_answer": "B",
+          "explanation": "CORS bepaalt welke origins toegang hebben tot resources via headers.",
+          "difficulty": "medium",
+          "tags": ["web_security"],
+          "is_backup": false
+        },
+        {
+          "id": 60,
+          "question": "Welk kenmerk hoort bij Single Page Applications (SPA)?",
+          "choices": {
+            "A": "Pagina herlaadt volledig bij elke navigatie",
+            "B": "Content wordt dynamisch geladen zonder volledige reload",
+            "C": "Geen JavaScript gebruikt",
+            "D": "Server rendert elke pagina"
+          },
+          "correct_answer": "B",
+          "explanation": "SPA laadt resources één keer en update de view via JS/DOM-manipulatie.",
+          "difficulty": "medium",
+          "tags": ["frontend"],
+          "is_backup": false
+        },
+        {
+          "id": 61,
+          "question": "Wat is semantic HTML goed voor?",
+          "choices": {
+            "A": "Snellere CSS downloads",
+            "B": "Betere toegankelijkheid en SEO",
+            "C": "Meer JavaScript nodig",
+            "D": "Verkleint afbeeldingen"
+          },
+          "correct_answer": "B",
+          "explanation": "Semantische tags verbeteren toegankelijkheid, SEO en onderhoudbaarheid.",
+          "difficulty": "easy",
+          "tags": ["html", "accessibility"],
+          "is_backup": false
+        },
+        {
+          "id": 62,
+          "question": "Wat is het verschil tussen responsive en adaptive design?",
+          "choices": {
+            "A": "Responsive past layout aan naar schermgrootte met fluid grids; adaptive gebruikt vaste breakpoints",
+            "B": "Geen verschil",
+            "C": "Adaptive laadt geen CSS",
+            "D": "Responsive gebruikt alleen JS"
+          },
+          "correct_answer": "A",
+          "explanation": "Responsive = vloeiende layout; adaptive = meerdere vaste layouts voor breakpoints.",
+          "difficulty": "medium",
+          "tags": ["css", "design"],
+          "is_backup": false
+        },
+        {
+          "id": 63,
+          "question": "Wat doet een CDN?",
+          "choices": {
+            "A": "Verbetert latency door content te cachen dichter bij gebruikers",
+            "B": "Beheert databases",
+            "C": "Versleutelt data",
+            "D": "Verbindt API's"
+          },
+          "correct_answer": "A",
+          "explanation": "Content Delivery Networks cachen statische assets en verlagen laadtijden wereldwijd.",
+          "difficulty": "easy",
+          "tags": ["performance"],
+          "is_backup": true
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "theme": "DevOps & CI/CD",
+      "questions": [
+        {
+          "id": 64,
+          "question": "Wat is CI in CI/CD?",
+          "choices": {
+            "A": "Code Integration",
+            "B": "Continuous Integration",
+            "C": "Container Instance",
+            "D": "Code Inspection"
+          },
+          "correct_answer": "B",
+          "explanation": "CI = Continuous Integration: code frequent samenvoegen en automatisch testen.",
+          "difficulty": "easy",
+          "tags": ["ci_cd"],
+          "is_backup": false
+        },
+        {
+          "id": 65,
+          "question": "Welk tool wordt veel gebruikt voor containerisatie?",
+          "choices": {
+            "A": "Docker",
+            "B": "Git",
+            "C": "Jenkins",
+            "D": "Ansible"
+          },
+          "correct_answer": "A",
+          "explanation": "Docker is de populairste container runtime/engine.",
+          "difficulty": "easy",
+          "tags": ["containers"],
+          "is_backup": false
+        },
+        {
+          "id": 66,
+          "question": "Wat doet Infrastructure as Code (IaC)?",
+          "choices": {
+            "A": "Schrijft code voor UI",
+            "B": "Automatiseert provisioning van infrastructuur via declaratieve bestanden",
+            "C": "Backup scripts",
+            "D": "Encryptie van data"
+          },
+          "correct_answer": "B",
+          "explanation": "IaC definieert infrastructuur in code (bv. Terraform, CloudFormation).",
+          "difficulty": "medium",
+          "tags": ["iac"],
+          "is_backup": false
+        },
+        {
+          "id": 67,
+          "question": "Wat is blue-green deployment?",
+          "choices": {
+            "A": "Een CSS thema",
+            "B": "Een deployment-strategie waarbij twee identieke omgevingen worden gebruikt om traffic te switchen",
+            "C": "Encryptie methode",
+            "D": "Monitoring tool"
+          },
+          "correct_answer": "B",
+          "explanation": "Blue-green reduceert downtime door traffic te verplaatsen van oude naar nieuwe omgeving.",
+          "difficulty": "medium",
+          "tags": ["deployment"],
+          "is_backup": false
+        },
+        {
+          "id": 68,
+          "question": "Waarom gebruik je linting tools in CI?",
+          "choices": {
+            "A": "Voor styling van de website",
+            "B": "Om codekwaliteitsregels automatisch af te dwingen vóór merge",
+            "C": "Om tests te overslaan",
+            "D": "Voor database backups"
+          },
+          "correct_answer": "B",
+          "explanation": "Linting automatiseert stijl- en kwaliteitsregels in de pipeline.",
+          "difficulty": "easy",
+          "tags": ["ci", "quality"],
+          "is_backup": false
+        },
+        {
+          "id": 69,
+          "question": "Wat is 'container orchestration' (bv. Kubernetes)?",
+          "choices": {
+            "A": "Handmatig starten van containers",
+            "B": "Automatiseren van deployment, schaal en management van containers",
+            "C": "Een soort database",
+            "D": "Frontend bundler"
+          },
+          "correct_answer": "B",
+          "explanation": "Kubernetes beheert container lifecycle, scaling, networking, enz.",
+          "difficulty": "medium",
+          "tags": ["kubernetes"],
+          "is_backup": true
+        },
+        {
+          "id": 70,
+          "question": "Wat doet een health check endpoint in CI/CD?",
+          "choices": {
+            "A": "Encryptie uitvoeren",
+            "B": "Controleren of een service correct functioneert",
+            "C": "Versnellen van builds",
+            "D": "Verwijderen van logs"
+          },
+          "correct_answer": "B",
+          "explanation": "Health checks detecteren of een service klaar is om verkeer te ontvangen.",
+          "difficulty": "easy",
+          "tags": ["monitoring"],
+          "is_backup": true
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "theme": "Software Engineering & Design",
+      "questions": [
+        {
+          "id": 71,
+          "question": "Wat beschrijft het 'single responsibility principle'?",
+          "choices": {
+            "A": "Een klasse mag meerdere verantwoordelijkheden hebben",
+            "B": "Een klasse moet één enkele reden van verandering hebben",
+            "C": "Altijd globale variabelen gebruiken",
+            "D": "Nooit tests schrijven"
+          },
+          "correct_answer": "B",
+          "explanation": "SRP zegt dat een klasse één verantwoordelijkheid/reden tot verandering zou moeten hebben.",
+          "difficulty": "medium",
+          "tags": ["design_principles", "s.o.l.i.d"],
+          "is_backup": false
+        },
+        {
+          "id": 72,
+          "question": "Wat is code refactoring?",
+          "choices": {
+            "A": "Het herschrijven van complete functionaliteit",
+            "B": "Het verbeteren van code-structuur zonder gedragsverandering",
+            "C": "Het toevoegen van features",
+            "D": "Deployen naar productie"
+          },
+          "correct_answer": "B",
+          "explanation": "Refactoren verbetert leesbaarheid/onderhoud zonder functionaliteit te veranderen.",
+          "difficulty": "easy",
+          "tags": ["refactoring"],
+          "is_backup": false
+        },
+        {
+          "id": 73,
+          "question": "Wat is 'technical debt'?",
+          "choices": {
+            "A": "Een lening voor softwarelicenties",
+            "B": "De extra kosten en complexiteit die ontstaan door snelle, minder optimale oplossingen",
+            "C": "Een bug tracker",
+            "D": "De licentiekosten van een framework"
+          },
+          "correct_answer": "B",
+          "explanation": "Technical debt ontstaat door shortcuts die later onderhoudskosten verhogen.",
+          "difficulty": "medium",
+          "tags": ["process"],
+          "is_backup": false
+        },
+        {
+          "id": 74,
+          "question": "Wat behelst unit testing?",
+          "choices": {
+            "A": "Testen van individuele onderdelen/methodes in isolatie",
+            "B": "End-to-end testen van de volledige app",
+            "C": "Load testen",
+            "D": "Monitoring"
+          },
+          "correct_answer": "A",
+          "explanation": "Unit tests controleren kleine eenheden (functies/classes) onafhankelijk.",
+          "difficulty": "easy",
+          "tags": ["testing"],
+          "is_backup": false
+        },
+        {
+          "id": 75,
+          "question": "Wat is een design pattern?",
+          "choices": {
+            "A": "Een code stylesheet",
+            "B": "Een herbruikbare oplossing voor veelvoorkomend ontwerpprobleem",
+            "C": "Een performance tool",
+            "D": "Een database index"
+          },
+          "correct_answer": "B",
+          "explanation": "Design patterns zijn gedocumenteerde oplossingspatronen (bv. Singleton, Observer).",
+          "difficulty": "medium",
+          "tags": ["patterns"],
+          "is_backup": false
+        },
+        {
+          "id": 76,
+          "question": "Wat bedoelt men met 'separation of concerns'?",
+          "choices": {
+            "A": "Alle logica in één bestand plaatsen",
+            "B": "Zorgen dat verschillende verantwoordelijkheden gescheiden worden gehouden",
+            "C": "Geen comments schrijven",
+            "D": "Altijd inline CSS gebruiken"
+          },
+          "correct_answer": "B",
+          "explanation": "Separation of concerns vermindert koppeling en vergemakkelijkt onderhoud.",
+          "difficulty": "medium",
+          "tags": ["architecture"],
+          "is_backup": false
+        },
+        {
+          "id": 77,
+          "question": "Wat is een 'code review' primair doel?",
+          "choices": {
+            "A": "Vinden van fouten, kennisdeling en kwaliteitsverbetering",
+            "B": "Vertraagd releaseproces",
+            "C": "Automatisch deployen",
+            "D": "Verhogen van buildtijd"
+          },
+          "correct_answer": "A",
+          "explanation": "Code reviews vinden bugs, delen kennis en verbeteren codekwaliteit.",
+          "difficulty": "easy",
+          "tags": ["process", "review"],
+          "is_backup": true
+        },
+        {
+          "id": 78,
+          "question": "Wat is 'pair programming'?",
+          "choices": {
+            "A": "Twee teams werken apart",
+            "B": "Twee ontwikkelaars werken samen aan dezelfde workstation/code",
+            "C": "Testen en coderen tegelijk",
+            "D": "Version control strategie"
+          },
+          "correct_answer": "B",
+          "explanation": "Pair programming bevordert directe samenwerking en kwaliteitsbewaking.",
+          "difficulty": "easy",
+          "tags": ["agile", "teamwork"],
+          "is_backup": true
+        }
+      ]
+    }
+  ]
+}
