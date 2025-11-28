@@ -1,3 +1,5 @@
+# database.py
+
 import sqlite3
 from locale import currency
 
@@ -15,7 +17,8 @@ class Database:
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         username TEXT UNIQUE NOT NULL,
         password TEXT NOT NULL,
-        highscore INTEGER DEFAULT 0
+        highscore INTEGER DEFAULT 0,
+        level INTEGER DEFAULT 1
         )
         """)
         self.conn.commit()
