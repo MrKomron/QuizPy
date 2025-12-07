@@ -1,8 +1,8 @@
 from PyQt6.QtWidgets import (
-    QWidget, QVBoxLayout, QLabel, QPushButton, QMessageBox, QHBoxLayout
+    QWidget, QVBoxLayout, QLabel, QPushButton, QMessageBox, QHBoxLayout,
 )
-from PyQt6.QtCore import Qt
-from PyQt6.QtGui import QFont
+from PyQt6.QtCore import Qt, QTimer
+from PyQt6.QtGui import QFont, QKeyEvent
 import json
 import os
 
@@ -15,6 +15,12 @@ class LevelWindow(QWidget):
         self.questions = []
         self.current_question_index = 0
         self.score = 0
+
+        self.time_per_question=15
+        self.time_left = self.time_per_question
+        self.timer = QTimer(self)
+        self.timer.setInterval(1000)
+        self.timer.timeout.connect(self.update_timer)
 
         self.setWindowTitle(f"QuizPy - Level {level_num}")
         self.resize(700, 600)
@@ -37,6 +43,11 @@ class LevelWindow(QWidget):
         self.layout = QVBoxLayout(self)
         self.layout.setContentsMargins(24, 24, 24, 24)
         self.layout.setSpacing(20)
+
+        self.timer_label = QLabel("Tijd: 15s")
+        self.timer_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.timer_label.setFont(QFont("Poppins", 14, QFont.Weight.Medium))
+        self.layout.addWidget(self.timer_label)
 
         self.question_label = QLabel()
         self.question_label.setWordWrap(True)
@@ -75,6 +86,10 @@ class LevelWindow(QWidget):
             self.show_result()
             return
 
+        self.time_left = self.time_per_question
+        self.timer_label.setText(f"Tijd: {self.time_left}s")
+        self.timer.start()
+
         self.feedback_label.setText("")
         self.next_button.setVisible(False)
 
@@ -87,6 +102,7 @@ class LevelWindow(QWidget):
             btn.setStyleSheet("")
 
     def check_answer(self, selected_choice):
+        self.timer.stop()
         question = self.questions[self.current_question_index]
         correct_choice = question["correct_answer"]
 
@@ -109,6 +125,9 @@ class LevelWindow(QWidget):
         self.show_question()
 
     def show_result(self):
+        self.timer.stop()
+        self.timer_label.setText("")
+
         for btn in self.choice_buttons.values():
             btn.setVisible(False)
             
@@ -125,3 +144,15 @@ class LevelWindow(QWidget):
             self.close()
         else:
             super().keyPressEvent(event)
+
+    def update_timer(self):
+        self.time_left -= 1
+        self.timer_label.setText(f"Tijd: {self.time_left}s")
+
+        if self.time_left <= 0:
+            # tijd is op → stop timer en skip vraag
+            self.timer.stop()
+            self.feedback_label.setText("Tijd is op! Vraag wordt overgeslagen.")
+            # geen score wijzigen, gewoon naar volgende vraag
+            self.next_question()
+

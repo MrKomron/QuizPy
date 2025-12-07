@@ -1,6 +1,8 @@
 # auth.py
 
 import sqlite3
+
+from PyQt6.QtGui import QKeyEvent
 from PyQt6.QtWidgets import (
     QWidget, QLineEdit, QVBoxLayout, QPushButton,
     QLabel, QMessageBox

@@ -18,7 +18,11 @@
           "correct_answer": "B",
           "explanation": "De string 'Python' heeft 6 tekens.",
           "difficulty": "easy",
-          "tags": ["python", "strings", "lengte"],
+          "tags": [
+            "python",
+            "strings",
+            "lengte"
+          ],
           "is_backup": false
         },
         {
@@ -33,7 +37,10 @@
           "correct_answer": "C",
           "explanation": "Tuples en strings zijn immutabel; lists, dicts en sets zijn veranderbaar.",
           "difficulty": "easy",
-          "tags": ["python", "datatypes"],
+          "tags": [
+            "python",
+            "datatypes"
+          ],
           "is_backup": false
         },
         {
@@ -48,7 +55,9 @@
           "correct_answer": "B",
           "explanation": "`return` geeft een waarde terug aan de caller en beëindigt de functie.",
           "difficulty": "easy",
-          "tags": ["functions"],
+          "tags": [
+            "functions"
+          ],
           "is_backup": false
         },
         {
@@ -63,7 +72,9 @@
           "correct_answer": "B",
           "explanation": "Kort en cryptisch maakt code moeilijk te begrijpen; betekenisvolle namen zijn aan te raden.",
           "difficulty": "easy",
-          "tags": ["best_practices"],
+          "tags": [
+            "best_practices"
+          ],
           "is_backup": false
         },
         {
@@ -78,7 +89,10 @@
           "correct_answer": "A",
           "explanation": "String vermenigvuldiging herhaalt de string 3 keer.",
           "difficulty": "easy",
-          "tags": ["strings", "python"],
+          "tags": [
+            "strings",
+            "python"
+          ],
           "is_backup": false
         },
         {
@@ -93,7 +107,9 @@
           "correct_answer": "B",
           "explanation": "Voor loops en while loops gebruik je herhaling/iteratie.",
           "difficulty": "easy",
-          "tags": ["control_flow"],
+          "tags": [
+            "control_flow"
+          ],
           "is_backup": false
         },
         {
@@ -108,7 +124,9 @@
           "correct_answer": "B",
           "explanation": "`x += 1` is shorthand voor `x = x + 1`.",
           "difficulty": "easy",
-          "tags": ["operators"],
+          "tags": [
+            "operators"
+          ],
           "is_backup": true
         },
         {
@@ -123,8 +141,262 @@
           "correct_answer": "B",
           "explanation": "Polymorfisme: één interface, meerdere implementaties (bv. method overloading/overriding).",
           "difficulty": "medium",
-          "tags": ["oop", "concepten"],
+          "tags": [
+            "oop",
+            "concepten"
+          ],
           "is_backup": true
+        },
+        {
+          "id": 79,
+          "question": "Wat is het verschil tussen een compiler en een interpreter?",
+          "choices": {
+            "A": "Een compiler vertaalt alles vooraf; een interpreter voert code regel voor regel uit",
+            "B": "Een compiler voert code direct uit; een interpreter maakt een .exe",
+            "C": "Er is geen verschil",
+            "D": "Een interpreter werkt alleen met Java"
+          },
+          "correct_answer": "A",
+          "explanation": "Compilers maken vooraf machinecode, interpreters voeren code stap voor stap uit tijdens runtime.",
+          "difficulty": "medium",
+          "tags": [
+            "programmeren",
+            "compiler",
+            "interpreter"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 80,
+          "question": "Wat is een 'boolean' in programmeertalen?",
+          "choices": {
+            "A": "Een teksttype",
+            "B": "Een lijst van waarden",
+            "C": "Een type dat alleen waar/onwaar (true/false) kan zijn",
+            "D": "Een variant van integer"
+          },
+          "correct_answer": "C",
+          "explanation": "Booleans representeren logische waarden: true of false.",
+          "difficulty": "easy",
+          "tags": [
+            "datatypes",
+            "boolean"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 81,
+          "question": "Wat betekent 'pass by reference' bij functies?",
+          "choices": {
+            "A": "De functie krijgt een kopie van de waarde",
+            "B": "De functie krijgt een verwijzing naar het originele object",
+            "C": "De functie retourneert niets",
+            "D": "De functie mag geen parameters hebben"
+          },
+          "correct_answer": "B",
+          "explanation": "Bij pass by reference wordt de referentie doorgegeven, waardoor de functie het originele object kan wijzigen.",
+          "difficulty": "medium",
+          "tags": [
+            "functions",
+            "parameters"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 82,
+          "question": "Wat is het resultaat van `5 // 2` in Python?",
+          "choices": {
+            "A": "2.5",
+            "B": "2",
+            "C": "3",
+            "D": "5"
+          },
+          "correct_answer": "B",
+          "explanation": "`//` is floor division en geeft het gehele deel van de deling: 2.",
+          "difficulty": "easy",
+          "tags": [
+            "python",
+            "operators"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 83,
+          "question": "Welke van de volgende is GEEN logisch operator?",
+          "choices": {
+            "A": "AND",
+            "B": "OR",
+            "C": "NOT",
+            "D": "ADD"
+          },
+          "correct_answer": "D",
+          "explanation": "ADD is een rekenkundige operator, geen logische.",
+          "difficulty": "easy",
+          "tags": [
+            "logic",
+            "operators"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 84,
+          "question": "Wat is een 'loop invariant'?",
+          "choices": {
+            "A": "Een fout in een loop",
+            "B": "Een conditie die vóór en na iedere iteratie waar blijft",
+            "C": "Een variabele die in de loop verandert",
+            "D": "Een oneindige lus"
+          },
+          "correct_answer": "B",
+          "explanation": "Een loop invariant is een eigenschap die tijdens de hele loop geldig blijft en helpt bij het bewijzen van correctheid.",
+          "difficulty": "medium",
+          "tags": [
+            "algoritmen",
+            "correctness"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 85,
+          "question": "Wat is 'type casting' in programmeertalen?",
+          "choices": {
+            "A": "Het verwijderen van variabelen",
+            "B": "Het wijzigen van een waarde van het ene type naar een ander type",
+            "C": "Het compileren van code",
+            "D": "Het debuggen van code"
+          },
+          "correct_answer": "B",
+          "explanation": "Type casting converteert een waarde expliciet naar een ander datatype, bijvoorbeeld int naar float.",
+          "difficulty": "easy",
+          "tags": [
+            "datatypes",
+            "casting"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 86,
+          "question": "Wat is 'scope' van een variabele?",
+          "choices": {
+            "A": "De datatype van de variabele",
+            "B": "De naamgeving van de variabele",
+            "C": "Het gedeelte van de code waar de variabele zichtbaar is",
+            "D": "De grootte in bytes van de variabele"
+          },
+          "correct_answer": "C",
+          "explanation": "Scope bepaalt waar een variabele benaderbaar is (bijv. lokaal in een functie of globaal).",
+          "difficulty": "easy",
+          "tags": [
+            "scope",
+            "variabelen"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 87,
+          "question": "Welke van de volgende hoort bij objectgeoriënteerd programmeren?",
+          "choices": {
+            "A": "SELECT en INSERT",
+            "B": "Klassen en objecten",
+            "C": "HTML en CSS",
+            "D": "IP en TCP"
+          },
+          "correct_answer": "B",
+          "explanation": "OOP werkt met concepten als klassen, objecten, encapsulation, inheritance en polymorfisme.",
+          "difficulty": "easy",
+          "tags": [
+            "oop"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 88,
+          "question": "Wat is 'encapsulation' in OOP?",
+          "choices": {
+            "A": "Het delen van alle velden publiek",
+            "B": "Het verbergen van interne implementatie achter een publieke interface",
+            "C": "Het dupliceren van code in meerdere klassen",
+            "D": "Het samenvoegen van meerdere projecten"
+          },
+          "correct_answer": "B",
+          "explanation": "Encapsulation verbergt details en biedt gecontroleerde toegang via methodes.",
+          "difficulty": "medium",
+          "tags": [
+            "oop",
+            "encapsulation"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 89,
+          "question": "Wat is het voordeel van commentaar (comments) in code?",
+          "choices": {
+            "A": "Code wordt sneller uitgevoerd",
+            "B": "Code wordt kleiner",
+            "C": "Code wordt beter leesbaar en onderhoudbaar",
+            "D": "Code wordt automatisch getest"
+          },
+          "correct_answer": "C",
+          "explanation": "Comments helpen andere ontwikkelaars (of jezelf later) de bedoeling van de code te begrijpen.",
+          "difficulty": "easy",
+          "tags": [
+            "best_practices"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 90,
+          "question": "Wat wordt bedoeld met 'pseudocode'?",
+          "choices": {
+            "A": "Volledig uitvoerbare code",
+            "B": "Een informele, taal-onafhankelijke beschrijving van een algoritme",
+            "C": "Machinecode",
+            "D": "SQL-scripts"
+          },
+          "correct_answer": "B",
+          "explanation": "Pseudocode beschrijft de logica van een algoritme zonder gebonden te zijn aan een specifieke taal.",
+          "difficulty": "easy",
+          "tags": [
+            "algoritmen",
+            "pseudocode"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 201,
+          "question": "Wat doet een load balancer in een netwerkarchitectuur?",
+          "choices": {
+            "A": "Slaat gegevens op in een database",
+            "B": "Verdeelt inkomend verkeer over meerdere servers",
+            "C": "Verhoogt de CPU-snelheid van een server",
+            "D": "Beheert DNS-verzoeken"
+          },
+          "correct_answer": "B",
+          "explanation": "Load balancers spreiden het verkeer om beschikbaarheid en prestaties te verbeteren.",
+          "difficulty": "medium",
+          "tags": [
+            "netwerken",
+            "architectuur"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 202,
+          "question": "Wat is het primaire doel van versiebeheer (version control)?",
+          "choices": {
+            "A": "De prestaties van code meten",
+            "B": "De code automatisch formatteren",
+            "C": "Wijzigingen in code bijhouden en samenwerken mogelijk maken",
+            "D": "Code compileren naar bytecode"
+          },
+          "correct_answer": "C",
+          "explanation": "Version control (zoals Git) houdt alle wijzigingen bij en maakt samenwerking veilig.",
+          "difficulty": "easy",
+          "tags": [
+            "git",
+            "softwareontwikkeling"
+          ],
+          "is_backup": false
         }
       ]
     },
@@ -144,7 +416,10 @@
           "correct_answer": "B",
           "explanation": "Stack werkt Last-In-First-Out (LIFO).",
           "difficulty": "easy",
-          "tags": ["stack", "concepts"],
+          "tags": [
+            "stack",
+            "concepts"
+          ],
           "is_backup": false
         },
         {
@@ -159,7 +434,10 @@
           "correct_answer": "A",
           "explanation": "Gemiddeld is zoeken O(1), afhankelijk van collisions kan het slechter zijn.",
           "difficulty": "medium",
-          "tags": ["hashmap", "complexity"],
+          "tags": [
+            "hashmap",
+            "complexity"
+          ],
           "is_backup": false
         },
         {
@@ -174,7 +452,9 @@
           "correct_answer": "B",
           "explanation": "Linked lists ondersteunen efficiëntere inserts/deletes in het midden (zonder verplaatsen van elementen).",
           "difficulty": "medium",
-          "tags": ["linked_list"],
+          "tags": [
+            "linked_list"
+          ],
           "is_backup": false
         },
         {
@@ -189,7 +469,9 @@
           "correct_answer": "B",
           "explanation": "Queue is First-In-First-Out (FIFO).",
           "difficulty": "easy",
-          "tags": ["queue"],
+          "tags": [
+            "queue"
+          ],
           "is_backup": false
         },
         {
@@ -204,7 +486,10 @@
           "correct_answer": "B",
           "explanation": "Gebalanceerde bomen (AVL, RB) hebben hoogte O(log n).",
           "difficulty": "medium",
-          "tags": ["trees", "bst"],
+          "tags": [
+            "trees",
+            "bst"
+          ],
           "is_backup": false
         },
         {
@@ -219,7 +504,10 @@
           "correct_answer": "A",
           "explanation": "Heaps (priority queues) zijn ideaal voor prioriteitsoperaties.",
           "difficulty": "medium",
-          "tags": ["heap", "priority_queue"],
+          "tags": [
+            "heap",
+            "priority_queue"
+          ],
           "is_backup": false
         },
         {
@@ -234,7 +522,9 @@
           "correct_answer": "A",
           "explanation": "Collision resolution behandelt meerdere keys die naar dezelfde bucket hash'en (bv. chaining of open addressing).",
           "difficulty": "medium",
-          "tags": ["hashing"],
+          "tags": [
+            "hashing"
+          ],
           "is_backup": true
         },
         {
@@ -249,8 +539,263 @@
           "correct_answer": "B",
           "explanation": "Random access resulteert vaak in vele cache misses, slechtere prestaties.",
           "difficulty": "medium",
-          "tags": ["performance", "cache"],
+          "tags": [
+            "performance",
+            "cache"
+          ],
           "is_backup": true
+        },
+        {
+          "id": 91,
+          "question": "Welke datastructuur is het meest geschikt om unieke elementen zonder volgorde op te slaan?",
+          "choices": {
+            "A": "List",
+            "B": "Set",
+            "C": "Queue",
+            "D": "Stack"
+          },
+          "correct_answer": "B",
+          "explanation": "Een set bevat unieke elementen en legt geen vaste volgorde op.",
+          "difficulty": "easy",
+          "tags": [
+            "set",
+            "datastructuren"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 92,
+          "question": "Wat is een 'binary heap' vooral goed in?",
+          "choices": {
+            "A": "Snel zoeken naar willekeurige elementen",
+            "B": "Snel vinden van minimum of maximum",
+            "C": "Snel concateneren van twee heaps",
+            "D": "Snel verwijderen van een element in het midden"
+          },
+          "correct_answer": "B",
+          "explanation": "Een heap is een partieel geordende boom die snelle toegang tot minimum of maximum biedt.",
+          "difficulty": "medium",
+          "tags": [
+            "heap",
+            "priority_queue"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 93,
+          "question": "Wat is het nadeel van een array t.o.v. een linked list?",
+          "choices": {
+            "A": "Array ondersteunt geen random access",
+            "B": "Array heeft dynamische grootte",
+            "C": "Invoegen/verwijderen in het midden is duur (veel verschuivingen)",
+            "D": "Array kan geen primitieve types bevatten"
+          },
+          "correct_answer": "C",
+          "explanation": "In een array moeten elementen worden verplaatst bij insert/delete in het midden.",
+          "difficulty": "medium",
+          "tags": [
+            "array",
+            "linked_list"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 94,
+          "question": "Welke eigenschap hoort bij een binaire zoekboom (BST)?",
+          "choices": {
+            "A": "Alle bladeren hebben dezelfde diepte",
+            "B": "Linkerkind < knoop < rechterkind",
+            "C": "Elke knoop heeft maximaal drie kinderen",
+            "D": "De wortel bevat altijd de grootste waarde"
+          },
+          "correct_answer": "B",
+          "explanation": "In een BST zijn alle waarden links kleiner en rechts groter dan de knoop.",
+          "difficulty": "easy",
+          "tags": [
+            "trees",
+            "bst"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 95,
+          "question": "Wat is 'amortized time complexity'?",
+          "choices": {
+            "A": "Gemiddelde tijd over alle mogelijke inputgroottes",
+            "B": "Worst-case tijd voor één operatie",
+            "C": "Gemiddelde tijd per operatie over een reeks operaties",
+            "D": "Tijd van de snelste operatie"
+          },
+          "correct_answer": "C",
+          "explanation": "Amortized analyse bekijkt de gemiddelde kost per operatie over een lange reeks, bv. bij dynamic arrays.",
+          "difficulty": "medium",
+          "tags": [
+            "complexity"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 96,
+          "question": "Welke datastructuur gebruik je typisch voor een 'undo'-functionaliteit?",
+          "choices": {
+            "A": "Queue",
+            "B": "Stack",
+            "C": "Set",
+            "D": "Hash map"
+          },
+          "correct_answer": "B",
+          "explanation": "Undo gebruikt vaak een stack: laatste actie wordt als eerste teruggedraaid (LIFO).",
+          "difficulty": "easy",
+          "tags": [
+            "stack",
+            "use_case"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 97,
+          "question": "Wat is een 'balanced tree'?",
+          "choices": {
+            "A": "Een boom met perfect gelijke knopen",
+            "B": "Een boom waarbij de hoogte beperkt is tot O(log n)",
+            "C": "Een boom met slechts één kind per knoop",
+            "D": "Een boom zonder bladeren"
+          },
+          "correct_answer": "B",
+          "explanation": "Gebalanceerde bomen zoals AVL en Red-Black houden de hoogte logaritmisch.",
+          "difficulty": "medium",
+          "tags": [
+            "trees",
+            "balanced"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 98,
+          "question": "Wat is 'open addressing' bij hashing?",
+          "choices": {
+            "A": "Keys worden in een aparte lijst opgeslagen",
+            "B": "Collisions worden opgelost door lineair of volgens een schema door de tabel te lopen",
+            "C": "Hash table is alleen-lezen",
+            "D": "Elke key krijgt meerdere buckets"
+          },
+          "correct_answer": "B",
+          "explanation": "Bij open addressing wordt bij collision een andere positie in de tabel gezocht.",
+          "difficulty": "medium",
+          "tags": [
+            "hashing"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 99,
+          "question": "Welke structuur is het meest geschikt voor een 'breadth-first search' wachtrij?",
+          "choices": {
+            "A": "Stack",
+            "B": "Priority queue",
+            "C": "Queue",
+            "D": "Set"
+          },
+          "correct_answer": "C",
+          "explanation": "BFS gebruikt een queue om nodes in lagen te bezoeken.",
+          "difficulty": "easy",
+          "tags": [
+            "bfs",
+            "graphs",
+            "queue"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 100,
+          "question": "Wat is 'path compression' in union-find datastructuren?",
+          "choices": {
+            "A": "Een manier om paden in grafen te verwijderen",
+            "B": "Een optimalisatie waarbij tijdens find-operaties ouders dichter bij de wortel worden gezet",
+            "C": "Een compressie-algoritme voor bestanden",
+            "D": "Een manier om geheugen vrij te maken"
+          },
+          "correct_answer": "B",
+          "explanation": "Path compression verkleint de hoogte van de union-find bomen voor snellere zoekoperaties.",
+          "difficulty": "medium",
+          "tags": [
+            "union_find",
+            "dsu"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 101,
+          "question": "Wat is het doel van een adjacency list voor grafen?",
+          "choices": {
+            "A": "Alle knopen in een array opslaan",
+            "B": "Alle buren per knoop opslaan voor efficiënte traversals",
+            "C": "De kortste paden bewaren",
+            "D": "Alle gewichten in een matrix bewaren"
+          },
+          "correct_answer": "B",
+          "explanation": "Adjacency lists bewaren per knoop de lijst van aangrenzende knopen.",
+          "difficulty": "easy",
+          "tags": [
+            "graphs",
+            "representation"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 102,
+          "question": "Welke datastructuur gebruik je doorgaans om de 'frontier' bij A*-search op te slaan?",
+          "choices": {
+            "A": "Gewone queue",
+            "B": "Stack",
+            "C": "Priority queue (heap)",
+            "D": "Hash table"
+          },
+          "correct_answer": "C",
+          "explanation": "A* gebruikt een priority queue om de volgende meest veelbelovende node te kiezen.",
+          "difficulty": "medium",
+          "tags": [
+            "a_star",
+            "graphs",
+            "heap"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 203,
+          "question": "Welke van de volgende hoort bij NoSQL-databases?",
+          "choices": {
+            "A": "Relaties tussen tabellen",
+            "B": "Vaste schema's",
+            "C": "Documentgebaseerde opslag",
+            "D": "SQL JOINs"
+          },
+          "correct_answer": "C",
+          "explanation": "NoSQL-databases zoals MongoDB gebruiken document- of key-value-opslag zonder vaste schema’s.",
+          "difficulty": "medium",
+          "tags": [
+            "database",
+            "nosql"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 204,
+          "question": "Wat is het verschil tussen IPv4 en IPv6?",
+          "choices": {
+            "A": "IPv6 gebruikt 128-bit adressen, IPv4 gebruikt 32-bit",
+            "B": "IPv4 is sneller dan IPv6",
+            "C": "IPv6 werkt alleen op Linux",
+            "D": "Er is geen verschil"
+          },
+          "correct_answer": "A",
+          "explanation": "IPv6 biedt veel meer unieke adressen door zijn 128-bit formaat.",
+          "difficulty": "medium",
+          "tags": [
+            "ip",
+            "netwerken"
+          ],
+          "is_backup": false
         }
       ]
     },
@@ -270,7 +815,9 @@
           "correct_answer": "B",
           "explanation": "Merge sort heeft altijd O(n log n) complexiteit.",
           "difficulty": "medium",
-          "tags": ["sorting"],
+          "tags": [
+            "sorting"
+          ],
           "is_backup": false
         },
         {
@@ -285,7 +832,10 @@
           "correct_answer": "B",
           "explanation": "Dijkstra is efficiënt voor grafen met niet-negatieve gewichten.",
           "difficulty": "medium",
-          "tags": ["graphs", "shortest_path"],
+          "tags": [
+            "graphs",
+            "shortest_path"
+          ],
           "is_backup": false
         },
         {
@@ -300,7 +850,9 @@
           "correct_answer": "B",
           "explanation": "DP gebruikt opslag (memo) voor overlappende subproblemen.",
           "difficulty": "medium",
-          "tags": ["dp"],
+          "tags": [
+            "dp"
+          ],
           "is_backup": false
         },
         {
@@ -315,7 +867,9 @@
           "correct_answer": "B",
           "explanation": "Kruskal (en Prim) worden gebruikt voor MST.",
           "difficulty": "easy",
-          "tags": ["graphs"],
+          "tags": [
+            "graphs"
+          ],
           "is_backup": false
         },
         {
@@ -330,7 +884,10 @@
           "correct_answer": "B",
           "explanation": "Backtracking bouwt oplossingen en backtrackt wanneer een pad niet leidt tot geldige oplossing.",
           "difficulty": "medium",
-          "tags": ["search", "backtracking"],
+          "tags": [
+            "search",
+            "backtracking"
+          ],
           "is_backup": false
         },
         {
@@ -345,7 +902,9 @@
           "correct_answer": "C",
           "explanation": "Quicksort kan O(n^2) bereiken bij slecht gekozen pivots (bijv. al gesorteerde input).",
           "difficulty": "medium",
-          "tags": ["sorting"],
+          "tags": [
+            "sorting"
+          ],
           "is_backup": false
         },
         {
@@ -360,7 +919,9 @@
           "correct_answer": "B",
           "explanation": "Greedy neemt de beste lokale keuze bij elk stap; garandeert niet altijd globaal optimum.",
           "difficulty": "medium",
-          "tags": ["algorithms"],
+          "tags": [
+            "algorithms"
+          ],
           "is_backup": true
         },
         {
@@ -375,8 +936,262 @@
           "correct_answer": "A",
           "explanation": "BFS geeft het kortste pad in termen van aantal edges in een ongewogen graaf.",
           "difficulty": "easy",
-          "tags": ["graphs", "bfs"],
+          "tags": [
+            "graphs",
+            "bfs"
+          ],
           "is_backup": true
+        },
+        {
+          "id": 103,
+          "question": "Wat is de tijdscomplexiteit van lineaire zoekalgoritme (linear search) in een niet-gesorteerde lijst?",
+          "choices": {
+            "A": "O(1)",
+            "B": "O(log n)",
+            "C": "O(n)",
+            "D": "O(n log n)"
+          },
+          "correct_answer": "C",
+          "explanation": "In het slechtste geval moet elk element bekeken worden, dus O(n).",
+          "difficulty": "easy",
+          "tags": [
+            "search"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 104,
+          "question": "Welk sorteeralgoritme is 'in-place' en heeft gemiddelde complexiteit O(n log n)?",
+          "choices": {
+            "A": "Merge sort",
+            "B": "Quick sort",
+            "C": "Counting sort",
+            "D": "Bubble sort"
+          },
+          "correct_answer": "B",
+          "explanation": "Quicksort sorteert in-place en heeft gemiddeld O(n log n).",
+          "difficulty": "medium",
+          "tags": [
+            "sorting",
+            "quicksort"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 105,
+          "question": "Welke techniek gebruik je wanneer je een probleem oplost door het op te splitsen in kleinere subproblemen van hetzelfde type?",
+          "choices": {
+            "A": "Greedy",
+            "B": "Divide and conquer",
+            "C": "Backtracking",
+            "D": "Brute force zonder structuur"
+          },
+          "correct_answer": "B",
+          "explanation": "Divide and conquer splitst een probleem in kleinere deelproblemen en combineert de oplossingen.",
+          "difficulty": "easy",
+          "tags": [
+            "algoritmen",
+            "divide_and_conquer"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 106,
+          "question": "Wat is de tijdscomplexiteit van een binair zoeken (binary search) in een gesorteerde array?",
+          "choices": {
+            "A": "O(1)",
+            "B": "O(log n)",
+            "C": "O(n)",
+            "D": "O(n log n)"
+          },
+          "correct_answer": "B",
+          "explanation": "Binary search halveert het zoekgebied elke stap, dus O(log n).",
+          "difficulty": "easy",
+          "tags": [
+            "search",
+            "binary_search"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 107,
+          "question": "Wat is het verschil tussen memoization en tabulation in dynamic programming?",
+          "choices": {
+            "A": "Memoization is top-down, tabulation is bottom-up",
+            "B": "Tabulation is top-down, memoization is bottom-up",
+            "C": "Er is geen verschil",
+            "D": "Beide zijn greedy technieken"
+          },
+          "correct_answer": "A",
+          "explanation": "Memoization: top-down met caching; tabulation: bottom-up in een tabel.",
+          "difficulty": "medium",
+          "tags": [
+            "dp"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 108,
+          "question": "Welke eigenschap hoort bij NP-complete problemen?",
+          "choices": {
+            "A": "Ze zijn in O(1) oplosbaar",
+            "B": "Ze zijn snel oplosbaar met een greedy algoritme",
+            "C": "Een oplossing is in polynomiale tijd verifieerbaar",
+            "D": "Ze kunnen niet worden geverifieerd"
+          },
+          "correct_answer": "C",
+          "explanation": "NP-complete: oplossing snel verifieerbaar, maar onbekend of er een polynomiaal tijdsalgoritme is om ze op te lossen.",
+          "difficulty": "medium",
+          "tags": [
+            "complexity",
+            "np_complete"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 109,
+          "question": "Welke strategie gebruik je bij 'branch and bound' algoritmen?",
+          "choices": {
+            "A": "Volledige brute force zonder enige beperking",
+            "B": "Systematisch zoeken en delen van de zoekruimte afsnijden op basis van grenzen",
+            "C": "Randomized search zonder grenzen",
+            "D": "Alleen greedy keuzes"
+          },
+          "correct_answer": "B",
+          "explanation": "Branch and bound snijdt delen van de zoekruimte af als ze niet tot een betere oplossing kunnen leiden.",
+          "difficulty": "medium",
+          "tags": [
+            "search",
+            "optimization"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 110,
+          "question": "Wat is een 'heuristic' in zoekalgoritmen zoals A*?",
+          "choices": {
+            "A": "Een exacte berekening van de optimale oplossing",
+            "B": "Een schatting van de kost tot het doel",
+            "C": "Een brute-force component",
+            "D": "Een soort data compressie"
+          },
+          "correct_answer": "B",
+          "explanation": "Een heuristic schat hoe ver je nog van het doel bent en stuurt de zoekrichting.",
+          "difficulty": "medium",
+          "tags": [
+            "a_star",
+            "heuristics"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 111,
+          "question": "Wat is de complexiteit van het doorlopen (traverseren) van alle knopen in een graaf met n knopen en m kanten met DFS?",
+          "choices": {
+            "A": "O(n)",
+            "B": "O(m)",
+            "C": "O(n + m)",
+            "D": "O(n^2)"
+          },
+          "correct_answer": "C",
+          "explanation": "DFS bezoekt elke knoop en elke kant hoogstens eenmaal, dus O(n + m).",
+          "difficulty": "medium",
+          "tags": [
+            "graphs",
+            "dfs",
+            "complexity"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 112,
+          "question": "Wat doet een topologische sortering?",
+          "choices": {
+            "A": "Sorteert getallen oplopend",
+            "B": "Sorteert knopen van een gerichte acyclische graaf zodanig dat alle pijlen vooruit wijzen",
+            "C": "Zoekt kortste pad in een graaf",
+            "D": "Berekent de minimale spanning tree"
+          },
+          "correct_answer": "B",
+          "explanation": "Topologische sortering ordent knopen van een DAG zodat elke rand van eerder naar later wijst.",
+          "difficulty": "medium",
+          "tags": [
+            "graphs",
+            "topological_sort"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 113,
+          "question": "Welke techniek gebruik je vaak om te bepalen of er een cyclus in een ongerichte graaf zit?",
+          "choices": {
+            "A": "Binary search",
+            "B": "Union-find (disjoint set)",
+            "C": "Merge sort",
+            "D": "Quicksort"
+          },
+          "correct_answer": "B",
+          "explanation": "Union-find kan efficiënt detecteren of het toevoegen van een rand een cyclus vormt.",
+          "difficulty": "medium",
+          "tags": [
+            "graphs",
+            "union_find"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 114,
+          "question": "Wat is 'approximation algorithm' bij moeilijke optimalisatieproblemen?",
+          "choices": {
+            "A": "Een algoritme dat altijd exact de optimale oplossing vindt",
+            "B": "Een algoritme dat geen oplossing garandeert",
+            "C": "Een algoritme dat binnen een bekende factor van het optimum een oplossing vindt",
+            "D": "Een brute-force algoritme"
+          },
+          "correct_answer": "C",
+          "explanation": "Approximation algorithms geven oplossingen die gegarandeerd niet te ver van het optimum afliggen.",
+          "difficulty": "medium",
+          "tags": [
+            "algoritmen",
+            "approximation"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 205,
+          "question": "Wat doet garbage collection in programmeertalen als Java of Python?",
+          "choices": {
+            "A": "Maakt tijdelijk bestanden aan",
+            "B": "Verwijdert ongebruikte objecten uit het geheugen",
+            "C": "Compileert de code sneller",
+            "D": "Verbetert de netwerkverbinding"
+          },
+          "correct_answer": "B",
+          "explanation": "Garbage collection herwint automatisch geheugen van objecten die niet meer gebruikt worden.",
+          "difficulty": "medium",
+          "tags": [
+            "memory",
+            "programmeren"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 206,
+          "question": "Welke HTTP-statuscode betekent 'Niet gevonden'?",
+          "choices": {
+            "A": "200",
+            "B": "301",
+            "C": "403",
+            "D": "404"
+          },
+          "correct_answer": "D",
+          "explanation": "HTTP 404 geeft aan dat de gevraagde resource niet bestaat.",
+          "difficulty": "easy",
+          "tags": [
+            "http",
+            "web"
+          ],
+          "is_backup": false
         }
       ]
     },
@@ -396,7 +1211,9 @@
           "correct_answer": "A",
           "explanation": "SQL staat voor Structured Query Language.",
           "difficulty": "easy",
-          "tags": ["sql"],
+          "tags": [
+            "sql"
+          ],
           "is_backup": false
         },
         {
@@ -411,7 +1228,9 @@
           "correct_answer": "C",
           "explanation": "SELECT haalt rijen op uit tabellen.",
           "difficulty": "easy",
-          "tags": ["sql"],
+          "tags": [
+            "sql"
+          ],
           "is_backup": false
         },
         {
@@ -426,7 +1245,9 @@
           "correct_answer": "B",
           "explanation": "Normalisatie reduceert redundantie en verbetert integriteit.",
           "difficulty": "medium",
-          "tags": ["database_design"],
+          "tags": [
+            "database_design"
+          ],
           "is_backup": false
         },
         {
@@ -441,7 +1262,10 @@
           "correct_answer": "C",
           "explanation": "INNER JOIN geeft alleen rijen die matchen in beide tabellen.",
           "difficulty": "medium",
-          "tags": ["sql", "joins"],
+          "tags": [
+            "sql",
+            "joins"
+          ],
           "is_backup": false
         },
         {
@@ -456,7 +1280,9 @@
           "correct_answer": "A",
           "explanation": "ACID staat voor Atomicity, Consistency, Isolation, Durability.",
           "difficulty": "medium",
-          "tags": ["transactions"],
+          "tags": [
+            "transactions"
+          ],
           "is_backup": false
         },
         {
@@ -471,7 +1297,9 @@
           "correct_answer": "A",
           "explanation": "B-tree indexen zijn goed voor range en equality searches.",
           "difficulty": "medium",
-          "tags": ["indexing"],
+          "tags": [
+            "indexing"
+          ],
           "is_backup": false
         },
         {
@@ -486,7 +1314,9 @@
           "correct_answer": "B",
           "explanation": "Denormalisatie voegt soms redundantie toe om leesprestaties te verbeteren.",
           "difficulty": "medium",
-          "tags": ["database_design"],
+          "tags": [
+            "database_design"
+          ],
           "is_backup": true
         },
         {
@@ -501,8 +1331,262 @@
           "correct_answer": "A",
           "explanation": "CREATE TABLE is standard SQL voor het maken van tabellen.",
           "difficulty": "easy",
-          "tags": ["sql"],
+          "tags": [
+            "sql"
+          ],
           "is_backup": true
+        },
+        {
+          "id": 115,
+          "question": "Welke SQL-clausule gebruik je om resultaten te filteren op rijniveau?",
+          "choices": {
+            "A": "GROUP BY",
+            "B": "ORDER BY",
+            "C": "WHERE",
+            "D": "FROM"
+          },
+          "correct_answer": "C",
+          "explanation": "WHERE filtert rijen op basis van een conditie.",
+          "difficulty": "easy",
+          "tags": [
+            "sql",
+            "where"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 116,
+          "question": "Welke SQL-functie gebruik je om het aantal rijen te tellen?",
+          "choices": {
+            "A": "COUNT()",
+            "B": "SUM()",
+            "C": "AVG()",
+            "D": "LEN()"
+          },
+          "correct_answer": "A",
+          "explanation": "COUNT() geeft het aantal rijen terug dat aan de query voldoet.",
+          "difficulty": "easy",
+          "tags": [
+            "sql",
+            "aggregates"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 117,
+          "question": "Wat is een primaire sleutel (PRIMARY KEY)?",
+          "choices": {
+            "A": "Een veld dat NULL mag zijn",
+            "B": "Een veld dat duplicaten toestaat",
+            "C": "Een veld of combinatie die elke rij uniek identificeert",
+            "D": "Een extern ID in andere tabellen"
+          },
+          "correct_answer": "C",
+          "explanation": "Een primary key identificeert records uniek en is niet NULL.",
+          "difficulty": "easy",
+          "tags": [
+            "database_design",
+            "keys"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 118,
+          "question": "Wat is een foreign key?",
+          "choices": {
+            "A": "Een sleutel die alleen in één tabel bestaat",
+            "B": "Een key die verwijst naar de primary key van een andere tabel",
+            "C": "Een key die niet uniek is",
+            "D": "Een tijdelijke key voor queries"
+          },
+          "correct_answer": "B",
+          "explanation": "Foreign keys leggen relaties tussen tabellen door te verwijzen naar primary keys.",
+          "difficulty": "easy",
+          "tags": [
+            "database_design",
+            "keys"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 119,
+          "question": "Welke normalvorm elimineert gedeeltelijke afhankelijkheden van een samengestelde key?",
+          "choices": {
+            "A": "1NF",
+            "B": "2NF",
+            "C": "3NF",
+            "D": "BCNF"
+          },
+          "correct_answer": "B",
+          "explanation": "2NF vereist dat alle niet-sleutel-attributen volledig afhangen van de gehele primaire sleutel.",
+          "difficulty": "medium",
+          "tags": [
+            "normalisatie",
+            "database_design"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 120,
+          "question": "Welke SQL-clausule gebruik je om resultaten te groeperen voor aggregatiefuncties?",
+          "choices": {
+            "A": "GROUP BY",
+            "B": "ORDER BY",
+            "C": "HAVING",
+            "D": "JOIN"
+          },
+          "correct_answer": "A",
+          "explanation": "GROUP BY groepeert rijen zodat aggregaties per groep berekend kunnen worden.",
+          "difficulty": "medium",
+          "tags": [
+            "sql",
+            "group_by"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 121,
+          "question": "Welk SQL-statement pas je toe om bestaande rijen te wijzigen?",
+          "choices": {
+            "A": "ALTER",
+            "B": "UPDATE",
+            "C": "MODIFY",
+            "D": "CHANGE"
+          },
+          "correct_answer": "B",
+          "explanation": "UPDATE wijzigt waarden in bestaande rijen.",
+          "difficulty": "easy",
+          "tags": [
+            "sql",
+            "update"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 122,
+          "question": "Wat doet de HAVING-clausule in SQL?",
+          "choices": {
+            "A": "Filtert individuele rijen",
+            "B": "Filtert op groepsniveau na GROUP BY",
+            "C": "Specificeert sortering",
+            "D": "Creëert een index"
+          },
+          "correct_answer": "B",
+          "explanation": "HAVING filtert groepen die door GROUP BY zijn gevormd.",
+          "difficulty": "medium",
+          "tags": [
+            "sql",
+            "having"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 123,
+          "question": "Welk type database schaalt horizontaal door data te sharden over meerdere nodes?",
+          "choices": {
+            "A": "Traditionele single-node RDBMS",
+            "B": "In-memory cache",
+            "C": "Veel NoSQL-databases",
+            "D": "CSV-bestanden"
+          },
+          "correct_answer": "C",
+          "explanation": "Veel NoSQL-systemen zijn ontworpen voor horizontale schaal door sharding en replicatie.",
+          "difficulty": "medium",
+          "tags": [
+            "nosql",
+            "scaling"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 124,
+          "question": "Wat is een 'index scan' in een database?",
+          "choices": {
+            "A": "Het volledig lezen van de tabel zonder index",
+            "B": "Het doorlopen van een indexstructuur om rijen te vinden",
+            "C": "Het herbouwen van alle indexen",
+            "D": "Het verwijderen van indexen"
+          },
+          "correct_answer": "B",
+          "explanation": "Bij een index scan gebruikt de database de index om relevante rijen te vinden.",
+          "difficulty": "medium",
+          "tags": [
+            "indexing",
+            "performance"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 125,
+          "question": "Wat is een 'materialized view'?",
+          "choices": {
+            "A": "Een view die alleen een query bewaart",
+            "B": "Een view waarvan de resultaten fysiek worden opgeslagen",
+            "C": "Een tijdelijke tabel",
+            "D": "Een index op een view"
+          },
+          "correct_answer": "B",
+          "explanation": "Materialized views slaan query-resultaten op zodat ze sneller gelezen kunnen worden.",
+          "difficulty": "medium",
+          "tags": [
+            "database_design",
+            "views"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 126,
+          "question": "Wat is het doel van een transaction log in een database?",
+          "choices": {
+            "A": "Caching van reads",
+            "B": "Bijhouden van wijzigingen voor herstel en durability",
+            "C": "Optimaliseren van queries",
+            "D": "Verkleinen van data"
+          },
+          "correct_answer": "B",
+          "explanation": "Transaction logs bewaren wijzigingen zodat transacties kunnen worden teruggedraaid of hersteld.",
+          "difficulty": "medium",
+          "tags": [
+            "transactions",
+            "logging"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 207,
+          "question": "Wat betekent DRY in softwareontwikkeling?",
+          "choices": {
+            "A": "Don't Repeat Yourself",
+            "B": "Do Run Yourself",
+            "C": "Data Runs Yearly",
+            "D": "Debug Regularly Yourself"
+          },
+          "correct_answer": "A",
+          "explanation": "DRY moedigt aan om herhaling in code te vermijden voor onderhoudbaarheid.",
+          "difficulty": "easy",
+          "tags": [
+            "principes",
+            "software_ontwerp"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 208,
+          "question": "Wat is een voordeel van microservices tegenover monolithische architecturen?",
+          "choices": {
+            "A": "Minder netwerkverkeer",
+            "B": "Eenvoudiger onderhoud en onafhankelijke deploys",
+            "C": "Geen behoefte aan API's",
+            "D": "Eén enkel foutpunt"
+          },
+          "correct_answer": "B",
+          "explanation": "Microservices kunnen onafhankelijk worden ontwikkeld, getest en gedeployed.",
+          "difficulty": "medium",
+          "tags": [
+            "architectuur",
+            "microservices"
+          ],
+          "is_backup": false
         }
       ]
     },
@@ -522,7 +1606,10 @@
           "correct_answer": "C",
           "explanation": "Transport is OSI-laag 4 (bv. TCP/UDP).",
           "difficulty": "easy",
-          "tags": ["osi", "tcp_udp"],
+          "tags": [
+            "osi",
+            "tcp_udp"
+          ],
           "is_backup": false
         },
         {
@@ -537,7 +1624,9 @@
           "correct_answer": "C",
           "explanation": "TCP is connection-oriented en garandeert volgorde en betrouwbaarheid.",
           "difficulty": "easy",
-          "tags": ["tcp"],
+          "tags": [
+            "tcp"
+          ],
           "is_backup": false
         },
         {
@@ -552,7 +1641,10 @@
           "correct_answer": "B",
           "explanation": "Subnetmask bepaalt welke delen van een IP adres netwerk- resp. hostbits zijn.",
           "difficulty": "medium",
-          "tags": ["ip", "subnet"],
+          "tags": [
+            "ip",
+            "subnet"
+          ],
           "is_backup": false
         },
         {
@@ -567,7 +1659,9 @@
           "correct_answer": "C",
           "explanation": "HTTP gebruikt standaard poort 80; HTTPS gebruikt 443.",
           "difficulty": "easy",
-          "tags": ["http"],
+          "tags": [
+            "http"
+          ],
           "is_backup": false
         },
         {
@@ -582,7 +1676,9 @@
           "correct_answer": "B",
           "explanation": "NAT vertaalt interne/private IPs naar een openbaar IP voor internettoegang.",
           "difficulty": "medium",
-          "tags": ["nat"],
+          "tags": [
+            "nat"
+          ],
           "is_backup": false
         },
         {
@@ -597,7 +1693,9 @@
           "correct_answer": "B",
           "explanation": "Latency is tijdsvertraging tussen zenden en ontvangen.",
           "difficulty": "easy",
-          "tags": ["network_performance"],
+          "tags": [
+            "network_performance"
+          ],
           "is_backup": false
         },
         {
@@ -612,7 +1710,9 @@
           "correct_answer": "A",
           "explanation": "Ping stuurt ICMP echo requests om bereikbaarheid te testen.",
           "difficulty": "easy",
-          "tags": ["tools"],
+          "tags": [
+            "tools"
+          ],
           "is_backup": true
         },
         {
@@ -627,8 +1727,262 @@
           "correct_answer": "B",
           "explanation": "DNS vertaalt domeinnamen naar de bijbehorende IP-adressen.",
           "difficulty": "easy",
-          "tags": ["dns"],
+          "tags": [
+            "dns"
+          ],
           "is_backup": true
+        },
+        {
+          "id": 127,
+          "question": "Op welke OSI-laag werkt een switch meestal?",
+          "choices": {
+            "A": "Laag 1 (Physical)",
+            "B": "Laag 2 (Data Link)",
+            "C": "Laag 3 (Network)",
+            "D": "Laag 7 (Application)"
+          },
+          "correct_answer": "B",
+          "explanation": "Een klassieke switch werkt voornamelijk op de datalinklaag met MAC-adressen.",
+          "difficulty": "medium",
+          "tags": [
+            "osi",
+            "switch"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 128,
+          "question": "Op welke OSI-laag werkt een router?",
+          "choices": {
+            "A": "Laag 1",
+            "B": "Laag 2",
+            "C": "Laag 3",
+            "D": "Laag 4"
+          },
+          "correct_answer": "C",
+          "explanation": "Routers opereren op de netwerklaag en gebruiken IP-adressen.",
+          "difficulty": "easy",
+          "tags": [
+            "osi",
+            "router"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 129,
+          "question": "Welke protocol wordt gebruikt voor het vertalen van IP-adressen naar MAC-adressen in een lokaal netwerk?",
+          "choices": {
+            "A": "DNS",
+            "B": "ARP",
+            "C": "HTTP",
+            "D": "SMTP"
+          },
+          "correct_answer": "B",
+          "explanation": "ARP (Address Resolution Protocol) vertaalt IP naar MAC-adressen.",
+          "difficulty": "easy",
+          "tags": [
+            "arp",
+            "netwerken"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 130,
+          "question": "Welk protocol wordt gebruikt om e-mail te ontvangen van een mailserver?",
+          "choices": {
+            "A": "SMTP",
+            "B": "POP3 of IMAP",
+            "C": "FTP",
+            "D": "SSH"
+          },
+          "correct_answer": "B",
+          "explanation": "POP3 en IMAP worden gebruikt om mails op te halen; SMTP om mails te versturen.",
+          "difficulty": "easy",
+          "tags": [
+            "email",
+            "protocols"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 131,
+          "question": "Wat is 'bandbreedte' in netwerktermen?",
+          "choices": {
+            "A": "De vertraging van een pakket",
+            "B": "De maximale hoeveelheid data per tijdseenheid",
+            "C": "De fysieke lengte van de kabel",
+            "D": "Het aantal gebruikers in een netwerk"
+          },
+          "correct_answer": "B",
+          "explanation": "Bandbreedte is de capaciteit van een verbinding in bijvoorbeeld Mbps.",
+          "difficulty": "easy",
+          "tags": [
+            "network_performance"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 132,
+          "question": "Wat is 'packet loss'?",
+          "choices": {
+            "A": "Toename van bandbreedte",
+            "B": "Pakketten die nooit op de bestemming aankomen",
+            "C": "Een snellere route voor data",
+            "D": "Het comprimeren van pakketten"
+          },
+          "correct_answer": "B",
+          "explanation": "Packet loss betekent dat sommige data-pakketten verloren gaan in het netwerk.",
+          "difficulty": "easy",
+          "tags": [
+            "netwerken",
+            "fouten"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 133,
+          "question": "Wat is het doel van een VPN?",
+          "choices": {
+            "A": "Verhogen van ping",
+            "B": "Een versleutelde tunnel maken over een onveilig netwerk",
+            "C": "Meer opslagruimte geven",
+            "D": "IP-adressen sneller maken"
+          },
+          "correct_answer": "B",
+          "explanation": "VPN's creëren een beveiligde, versleutelde verbinding over bijv. het internet.",
+          "difficulty": "medium",
+          "tags": [
+            "vpn",
+            "security",
+            "netwerken"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 134,
+          "question": "Welke adresrange hoort bij private IPv4-adressen?",
+          "choices": {
+            "A": "8.8.8.0/24",
+            "B": "192.168.0.0/16",
+            "C": "1.1.1.0/24",
+            "D": "172.0.0.0/8"
+          },
+          "correct_answer": "B",
+          "explanation": "192.168.0.0/16 is een bekende private range (naast 10.0.0.0/8 en 172.16.0.0/12).",
+          "difficulty": "medium",
+          "tags": [
+            "ip",
+            "private"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 135,
+          "question": "Welke tool gebruik je om de route van pakketten door het netwerk te bekijken?",
+          "choices": {
+            "A": "ping",
+            "B": "traceroute / tracert",
+            "C": "netstat",
+            "D": "ls"
+          },
+          "correct_answer": "B",
+          "explanation": "Traceroute toont de opeenvolgende hops die een pakket aflegt.",
+          "difficulty": "easy",
+          "tags": [
+            "tools",
+            "netwerken"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 136,
+          "question": "Wat is het doel van QoS (Quality of Service) in netwerken?",
+          "choices": {
+            "A": "IP-adressen toekennen",
+            "B": "Verkeer prioriteren om bepaalde stromen te garanderen",
+            "C": "DNS-resolutie versnellen",
+            "D": "Firewalls uit te schakelen"
+          },
+          "correct_answer": "B",
+          "explanation": "QoS stelt prioriteiten, bv. voor voice over IP boven bulk data.",
+          "difficulty": "medium",
+          "tags": [
+            "qos",
+            "netwerken"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 137,
+          "question": "Wat is het doel van DHCP in een netwerk?",
+          "choices": {
+            "A": "Automatisch IP-adressen uitdelen aan clients",
+            "B": "Bestanden delen",
+            "C": "Mails versturen",
+            "D": "Routers configureren"
+          },
+          "correct_answer": "A",
+          "explanation": "DHCP wijst automatisch IP-configuratie toe (IP, gateway, DNS).",
+          "difficulty": "easy",
+          "tags": [
+            "dhcp",
+            "netwerken"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 138,
+          "question": "Welke poort gebruikt HTTPS standaard?",
+          "choices": {
+            "A": "80",
+            "B": "21",
+            "C": "53",
+            "D": "443"
+          },
+          "correct_answer": "D",
+          "explanation": "HTTPS gebruikt poort 443 over TLS.",
+          "difficulty": "easy",
+          "tags": [
+            "https",
+            "ports"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 209,
+          "question": "Wat is een 'race condition'?",
+          "choices": {
+            "A": "Een programmeerwedstrijd",
+            "B": "Een fout die optreedt wanneer meerdere processen tegelijk gedeelde data gebruiken",
+            "C": "Een vorm van geheugenlek",
+            "D": "Een netwerkvertraging"
+          },
+          "correct_answer": "B",
+          "explanation": "Race conditions ontstaan bij gelijktijdige toegang tot gedeelde resources zonder synchronisatie.",
+          "difficulty": "medium",
+          "tags": [
+            "concurrency",
+            "threads"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 210,
+          "question": "Wat is een voordeel van containerisatie?",
+          "choices": {
+            "A": "Containers draaien alleen op Windows",
+            "B": "Containers bieden geïsoleerde, consistente omgevingen voor applicaties",
+            "C": "Containers hebben meer overhead dan virtuele machines",
+            "D": "Containers kunnen niet gedeeld worden"
+          },
+          "correct_answer": "B",
+          "explanation": "Containers zorgen voor geïsoleerde, lichte omgevingen die overal hetzelfde draaien.",
+          "difficulty": "medium",
+          "tags": [
+            "containers",
+            "docker"
+          ],
+          "is_backup": false
         }
       ]
     },
@@ -648,7 +2002,10 @@
           "correct_answer": "B",
           "explanation": "Phishing misleidt gebruikers om gevoelige info vrij te geven.",
           "difficulty": "easy",
-          "tags": ["security", "phishing"],
+          "tags": [
+            "security",
+            "phishing"
+          ],
           "is_backup": false
         },
         {
@@ -663,7 +2020,10 @@
           "correct_answer": "C",
           "explanation": "TLS/SSL versleutelt verkeer (bv. HTTPS).",
           "difficulty": "easy",
-          "tags": ["tls", "https"],
+          "tags": [
+            "tls",
+            "https"
+          ],
           "is_backup": false
         },
         {
@@ -678,7 +2038,9 @@
           "correct_answer": "B",
           "explanation": "2FA combineert iets wat je weet (pwd) met iets wat je hebt/ben (token, biometrie).",
           "difficulty": "medium",
-          "tags": ["auth"],
+          "tags": [
+            "auth"
+          ],
           "is_backup": false
         },
         {
@@ -693,7 +2055,9 @@
           "correct_answer": "B",
           "explanation": "DDoS (Distributed Denial of Service) probeert resources uit te putten via massa-aanvragen.",
           "difficulty": "medium",
-          "tags": ["ddos"],
+          "tags": [
+            "ddos"
+          ],
           "is_backup": false
         },
         {
@@ -708,7 +2072,10 @@
           "correct_answer": "C",
           "explanation": "SQL-injectie misbruikt onbeveiligde inputs om ongewenste queries uit te voeren.",
           "difficulty": "medium",
-          "tags": ["web_security", "sql_injection"],
+          "tags": [
+            "web_security",
+            "sql_injection"
+          ],
           "is_backup": false
         },
         {
@@ -723,10 +2090,12 @@
           "correct_answer": "A",
           "explanation": "Least privilege geeft minimale benodigde rechten toe.",
           "difficulty": "medium",
-          "tags": ["security_principles"],
+          "tags": [
+            "security_principles"
+          ],
           "is_backup": false
         },
-      {
+        {
           "id": 47,
           "question": "Wat betekent 'hashing' van een wachtwoord?",
           "choices": {
@@ -738,7 +2107,10 @@
           "correct_answer": "B",
           "explanation": "Hashing is een eenrichtingsfunctie; handig voor veilige opslag van wachtwoorden.",
           "difficulty": "medium",
-          "tags": ["hashing", "passwords"],
+          "tags": [
+            "hashing",
+            "passwords"
+          ],
           "is_backup": true
         },
         {
@@ -753,8 +2125,260 @@
           "correct_answer": "D",
           "explanation": "Backups en redundantie zorgen dat data hersteld kan worden na verlies.",
           "difficulty": "easy",
-          "tags": ["backup"],
+          "tags": [
+            "backup"
+          ],
           "is_backup": true
+        },
+        {
+          "id": 139,
+          "question": "Wat is een 'zero-day' kwetsbaarheid?",
+          "choices": {
+            "A": "Een kwetsbaarheid die al lang bekend is",
+            "B": "Een kwetsbaarheid waarvoor nog geen patch beschikbaar is",
+            "C": "Een kwetsbaarheid die alleen op dag nul voorkomt",
+            "D": "Een fout in back-upsoftware"
+          },
+          "correct_answer": "B",
+          "explanation": "Zero-day betekent dat de leverancier nog geen patch heeft en de kwetsbaarheid net bekend/gebruikt is.",
+          "difficulty": "medium",
+          "tags": [
+            "security",
+            "vulnerabilities"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 140,
+          "question": "Wat is 'social engineering'?",
+          "choices": {
+            "A": "Criminelen die alleen code gebruiken",
+            "B": "Gebruikers manipuleren om gevoelige informatie prijs te geven",
+            "C": "Het installeren van antivirussoftware",
+            "D": "Het bouwen van sociale netwerken"
+          },
+          "correct_answer": "B",
+          "explanation": "Social engineering misbruikt menselijk gedrag in plaats van technische zwakheden.",
+          "difficulty": "easy",
+          "tags": [
+            "security",
+            "social_engineering"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 141,
+          "question": "Wat is een 'brute-force' wachtwoordaanval?",
+          "choices": {
+            "A": "Een aanval via phishing-links",
+            "B": "Het uitproberen van zeer veel wachtwoordcombinaties",
+            "C": "Het afluisteren van netwerkverkeer",
+            "D": "Het stelen van een databasebackup"
+          },
+          "correct_answer": "B",
+          "explanation": "Brute-force probeert systematisch combinaties totdat een juiste gevonden wordt.",
+          "difficulty": "easy",
+          "tags": [
+            "security",
+            "passwords"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 142,
+          "question": "Wat is 'ransomware'?",
+          "choices": {
+            "A": "Malware die bestanden versleutelt en losgeld eist",
+            "B": "Software om backups te maken",
+            "C": "Een antivirusproduct",
+            "D": "Een soort firewall"
+          },
+          "correct_answer": "A",
+          "explanation": "Ransomware blokkeert toegang tot data en vraagt losgeld om te ontsleutelen.",
+          "difficulty": "easy",
+          "tags": [
+            "malware",
+            "security"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 143,
+          "question": "Waarom is het gevaarlijk om dezelfde wachtwoorden op meerdere sites te gebruiken?",
+          "choices": {
+            "A": "Wachtwoorden worden sneller verlopen",
+            "B": "Een datalek op één site kan toegang geven op andere sites",
+            "C": "Het is moeilijker te onthouden",
+            "D": "Sites accepteren dit niet"
+          },
+          "correct_answer": "B",
+          "explanation": "Bij hergebruik kan één gelekt wachtwoord worden misbruikt op andere diensten.",
+          "difficulty": "easy",
+          "tags": [
+            "passwords",
+            "security"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 144,
+          "question": "Wat is 'XSS' (Cross-Site Scripting)?",
+          "choices": {
+            "A": "Het injecteren van SQL-opdrachten",
+            "B": "Het uitvoeren van schadelijke scripts in de browser van een gebruiker",
+            "C": "Het versleutelen van cookies",
+            "D": "Het scannen van poorten"
+          },
+          "correct_answer": "B",
+          "explanation": "Bij XSS wordt kwaadwillige scriptcode geïnjecteerd die in de browser van slachtoffers draait.",
+          "difficulty": "medium",
+          "tags": [
+            "web_security",
+            "xss"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 145,
+          "question": "Wat betekent 'principle of defense in depth' in security?",
+          "choices": {
+            "A": "Slechts één sterke beveiligingslaag gebruiken",
+            "B": "Meerdere lagen van beveiliging toepassen",
+            "C": "Alleen fysieke beveiliging gebruiken",
+            "D": "Alleen netwerkbeveiliging gebruiken"
+          },
+          "correct_answer": "B",
+          "explanation": "Defense in depth gebruikt meerdere overlappende beveiligingsmaatregelen.",
+          "difficulty": "medium",
+          "tags": [
+            "security_principles"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 146,
+          "question": "Wat is een 'security patch'?",
+          "choices": {
+            "A": "Een antivirusprogramma",
+            "B": "Een software-update die een kwetsbaarheid verhelpt",
+            "C": "Een firewallregel",
+            "D": "Een backupscript"
+          },
+          "correct_answer": "B",
+          "explanation": "Patches lossen bekende kwetsbaarheden of fouten in software op.",
+          "difficulty": "easy",
+          "tags": [
+            "patching",
+            "security"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 147,
+          "question": "Waarom is het belangrijk om logs te bewaren in security-context?",
+          "choices": {
+            "A": "Logs maken systemen sneller",
+            "B": "Logs zijn nodig om incidenten te onderzoeken en te detecteren",
+            "C": "Logs vervangen antivirus",
+            "D": "Logs zijn alleen decoratie"
+          },
+          "correct_answer": "B",
+          "explanation": "Logs helpen bij detectie, forensics en compliance.",
+          "difficulty": "medium",
+          "tags": [
+            "logging",
+            "security"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 148,
+          "question": "Wat is 'least privilege' vooral bedoeld om te minimaliseren?",
+          "choices": {
+            "A": "Opslagruimtegebruik",
+            "B": "Kans dat een account misbruikt grote schade kan aanrichten",
+            "C": "CPU-gebruik",
+            "D": "Aantal gebruikers"
+          },
+          "correct_answer": "B",
+          "explanation": "Door slechts minimale rechten te geven, beperkt men de impact van compromises of fouten.",
+          "difficulty": "medium",
+          "tags": [
+            "security_principles"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 149,
+          "question": "Wat is 'salting' van een wachtwoordhash?",
+          "choices": {
+            "A": "Een hash herhaaldelijk berekenen",
+            "B": "Een willekeurige waarde toevoegen vóór het hashen",
+            "C": "Een wachtwoord comprimeren",
+            "D": "Een wachtwoord versleutelen met AES"
+          },
+          "correct_answer": "B",
+          "explanation": "Salts maken hash-uitkomsten uniek en beschermen tegen rainbow tables.",
+          "difficulty": "medium",
+          "tags": [
+            "hashing",
+            "passwords"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 150,
+          "question": "Welke eigenschap hoort bij 'integrity' in de CIA-triad?",
+          "choices": {
+            "A": "Beschikbaarheid van systemen",
+            "B": "Vertrouwelijkheid van data",
+            "C": "Nauwkeurigheid en onbeïnvloedheid van data",
+            "D": "Snelheid van systemen"
+          },
+          "correct_answer": "C",
+          "explanation": "Integrity betekent dat data correct en niet ongeautoriseerd aangepast is.",
+          "difficulty": "easy",
+          "tags": [
+            "security",
+            "cia_triad"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 211,
+          "question": "Wat doet de DNS-cache op een computer?",
+          "choices": {
+            "A": "Verwijdert tijdelijke bestanden",
+            "B": "Slaat eerder opgezochte domein-IP combinaties tijdelijk op",
+            "C": "Blokkeert onbekende websites",
+            "D": "Vertraagt zoekopdrachten"
+          },
+          "correct_answer": "B",
+          "explanation": "De DNS-cache voorkomt herhaalde lookups door IP’s tijdelijk op te slaan.",
+          "difficulty": "easy",
+          "tags": [
+            "dns",
+            "netwerken"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 212,
+          "question": "Welke bestandsindeling wordt vaak gebruikt voor configuratiebestanden?",
+          "choices": {
+            "A": "PNG",
+            "B": "EXE",
+            "C": "JSON",
+            "D": "MP3"
+          },
+          "correct_answer": "C",
+          "explanation": "JSON is licht en mensleesbaar, ideaal voor configuratie en data-uitwisseling.",
+          "difficulty": "easy",
+          "tags": [
+            "json",
+            "configuratie"
+          ],
+          "is_backup": false
         }
       ]
     },
@@ -774,7 +2398,9 @@
           "correct_answer": "B",
           "explanation": "Virtual memory gebruikt disk (swap) als uitbreiding van RAM.",
           "difficulty": "medium",
-          "tags": ["memory"],
+          "tags": [
+            "memory"
+          ],
           "is_backup": false
         },
         {
@@ -789,7 +2415,9 @@
           "correct_answer": "C",
           "explanation": "SJF minimaliseert gemiddelde wachttijd in batch workloads (theoretisch).",
           "difficulty": "medium",
-          "tags": ["scheduling"],
+          "tags": [
+            "scheduling"
+          ],
           "is_backup": false
         },
         {
@@ -804,7 +2432,9 @@
           "correct_answer": "B",
           "explanation": "System call schakelt van user mode naar kernel mode om OS-diensten te gebruiken.",
           "difficulty": "easy",
-          "tags": ["syscalls"],
+          "tags": [
+            "syscalls"
+          ],
           "is_backup": false
         },
         {
@@ -819,7 +2449,10 @@
           "correct_answer": "A",
           "explanation": "Context switch wisselt CPU-state tussen processen/threads.",
           "difficulty": "medium",
-          "tags": ["processes", "threads"],
+          "tags": [
+            "processes",
+            "threads"
+          ],
           "is_backup": false
         },
         {
@@ -834,7 +2467,9 @@
           "correct_answer": "B",
           "explanation": "Deadlock: circulair wachten; vereist detectie of preventie.",
           "difficulty": "medium",
-          "tags": ["deadlock"],
+          "tags": [
+            "deadlock"
+          ],
           "is_backup": false
         },
         {
@@ -849,7 +2484,9 @@
           "correct_answer": "C",
           "explanation": "Threads delen hetzelfde adresruimte binnen hun process; processen hebben aparte adressen.",
           "difficulty": "medium",
-          "tags": ["concurrency"],
+          "tags": [
+            "concurrency"
+          ],
           "is_backup": false
         },
         {
@@ -864,7 +2501,9 @@
           "correct_answer": "B",
           "explanation": "Swap is diskruimte gebruikt als uitbreiding van RAM (partitie of bestand).",
           "difficulty": "easy",
-          "tags": ["memory"],
+          "tags": [
+            "memory"
+          ],
           "is_backup": true
         },
         {
@@ -879,8 +2518,259 @@
           "correct_answer": "B",
           "explanation": "`ps`, `top` tonen processen en resourcegebruik.",
           "difficulty": "easy",
-          "tags": ["linux_tools"],
+          "tags": [
+            "linux_tools"
+          ],
           "is_backup": true
+        },
+        {
+          "id": 151,
+          "question": "Wat is een 'kernel' in een besturingssysteem?",
+          "choices": {
+            "A": "De grafische interface",
+            "B": "Het centrale deel van het OS dat hardware en resources beheert",
+            "C": "Een gebruikersapplicatie",
+            "D": "Een antivirusmodule"
+          },
+          "correct_answer": "B",
+          "explanation": "De kernel beheert CPU, geheugen, I/O en biedt services aan processen.",
+          "difficulty": "easy",
+          "tags": [
+            "os",
+            "kernel"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 152,
+          "question": "Wat is 'preemptive multitasking'?",
+          "choices": {
+            "A": "Processen beslissen zelf wanneer ze stoppen",
+            "B": "Het OS kan een proces onderbreken om CPU aan een ander te geven",
+            "C": "Er draait maximaal één proces tegelijk",
+            "D": "Alle processen hebben altijd gelijke tijd"
+          },
+          "correct_answer": "B",
+          "explanation": "Bij preemptive multitasking plant de scheduler processen, los van hun medewerking.",
+          "difficulty": "medium",
+          "tags": [
+            "scheduling",
+            "os"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 153,
+          "question": "Wat is een 'process identifier' (PID)?",
+          "choices": {
+            "A": "De naam van het OS",
+            "B": "Een uniek nummer dat een proces identificeert",
+            "C": "Het aantal threads",
+            "D": "Het IP-adres van de machine"
+          },
+          "correct_answer": "B",
+          "explanation": "PID is de unieke ID waarmee het OS processen beheert.",
+          "difficulty": "easy",
+          "tags": [
+            "processes",
+            "os"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 154,
+          "question": "Wat is 'thrashing' in geheugentermen?",
+          "choices": {
+            "A": "Wanneer CPU opmax draait",
+            "B": "Wanneer het systeem bijna alleen maar pagina's wisselt tussen RAM en schijf",
+            "C": "Wanneer schijf vol is",
+            "D": "Wanneer netwerk overbelast is"
+          },
+          "correct_answer": "B",
+          "explanation": "Thrashing treedt op bij teveel paging, waardoor prestaties enorm dalen.",
+          "difficulty": "medium",
+          "tags": [
+            "memory",
+            "os"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 155,
+          "question": "Wat is een 'race condition'?",
+          "choices": {
+            "A": "Een CPU die te snel draait",
+            "B": "Een onverwachte situatie wanneer de uitkomst afhangt van de volgorde van thread-uitvoering",
+            "C": "Een type RAM-geheugen",
+            "D": "Een optimalisatie in de compiler"
+          },
+          "correct_answer": "B",
+          "explanation": "Race conditions ontstaan bij concurrerende toegang zonder goede synchronisatie.",
+          "difficulty": "medium",
+          "tags": [
+            "concurrency",
+            "threads"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 156,
+          "question": "Welke primitive gebruik je om kritieke secties te beschermen?",
+          "choices": {
+            "A": "Semaphore of mutex",
+            "B": "Array",
+            "C": "Pointer",
+            "D": "Compiler flag"
+          },
+          "correct_answer": "A",
+          "explanation": "Mutexen en semaforen zorgen dat slechts één thread tegelijk een kritieke sectie binnen kan.",
+          "difficulty": "medium",
+          "tags": [
+            "concurrency",
+            "synchronization"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 157,
+          "question": "Wat is een 'daemon' proces in Unix/Linux?",
+          "choices": {
+            "A": "Een GUI-applicatie",
+            "B": "Een achtergrondproces zonder directe user interface",
+            "C": "Een virusscanner",
+            "D": "Een kernel-module"
+          },
+          "correct_answer": "B",
+          "explanation": "Daemons draaien op de achtergrond en leveren services (bijv. sshd, httpd).",
+          "difficulty": "easy",
+          "tags": [
+            "linux",
+            "processes"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 158,
+          "question": "Wat is een 'file descriptor'?",
+          "choices": {
+            "A": "Een bestandsnaam",
+            "B": "Een integer die een geopend bestand of resource vertegenwoordigt",
+            "C": "De grootte van een bestand",
+            "D": "Een hash van de bestandsinhoud"
+          },
+          "correct_answer": "B",
+          "explanation": "File descriptors zijn referenties die processen gebruiken om I/O-resources aan te spreken.",
+          "difficulty": "medium",
+          "tags": [
+            "os",
+            "io"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 159,
+          "question": "Welke Linux-commando gebruik je om de huidige directory te tonen?",
+          "choices": {
+            "A": "ls",
+            "B": "pwd",
+            "C": "cd",
+            "D": "mv"
+          },
+          "correct_answer": "B",
+          "explanation": "`pwd` toont het pad van de huidige werkdirectory.",
+          "difficulty": "easy",
+          "tags": [
+            "linux_tools"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 160,
+          "question": "Wat is het verschil tussen een hard link en een symbolic link (symlink)?",
+          "choices": {
+            "A": "Hard link verwijst naar padnaam, symlink naar inode",
+            "B": "Symlink verwijst naar padnaam, hard link naar hetzelfde inode/bestand",
+            "C": "Er is geen verschil",
+            "D": "Hard links bestaan alleen op Windows"
+          },
+          "correct_answer": "B",
+          "explanation": "Hard links delen dezelfde inode; symlinks verwijzen naar een pad.",
+          "difficulty": "medium",
+          "tags": [
+            "filesystem"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 161,
+          "question": "Welke scheduler-strategie geeft elk proces om de beurt een vaste tijdsquantum?",
+          "choices": {
+            "A": "FIFO",
+            "B": "Shortest Job First",
+            "C": "Round-robin",
+            "D": "Priority-only"
+          },
+          "correct_answer": "C",
+          "explanation": "Round-robin wisselt processen na een tijdsquantum.",
+          "difficulty": "easy",
+          "tags": [
+            "scheduling"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 162,
+          "question": "Wat is 'memory-mapped file I/O'?",
+          "choices": {
+            "A": "Bestanden die niet naar geheugen kunnen",
+            "B": "Een bestand in het adresruimte van een proces mappen zodat het als geheugen kan worden benaderd",
+            "C": "Bestanden versleutelen",
+            "D": "Bestanden naar netwerk mappen"
+          },
+          "correct_answer": "B",
+          "explanation": "Memory-mapped I/O laat een bestand als een deel van het geheugen lijken, wat I/O kan versnellen.",
+          "difficulty": "medium",
+          "tags": [
+            "os",
+            "memory"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 213,
+          "question": "Wat is het doel van een firewall?",
+          "choices": {
+            "A": "Verhogen van downloadsnelheid",
+            "B": "Toegang beheren tot netwerkverkeer volgens regels",
+            "C": "Encryptie uitvoeren op bestanden",
+            "D": "CPU-prestaties verbeteren"
+          },
+          "correct_answer": "B",
+          "explanation": "Firewalls filteren netwerkverkeer volgens toegangsregels en beschermen tegen aanvallen.",
+          "difficulty": "medium",
+          "tags": [
+            "security",
+            "netwerken"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 214,
+          "question": "Wat doet het 'try-except' blok in Python?",
+          "choices": {
+            "A": "Herkent syntaxfouten",
+            "B": "Voert code uit afhankelijk van een conditie",
+            "C": "Behandelt uitzonderingen zonder crash",
+            "D": "Vertraagt de uitvoering"
+          },
+          "correct_answer": "C",
+          "explanation": "Met try-except kun je fouten opvangen en alternatieve code uitvoeren.",
+          "difficulty": "easy",
+          "tags": [
+            "python",
+            "exceptions"
+          ],
+          "is_backup": false
         }
       ]
     },
@@ -900,7 +2790,10 @@
           "correct_answer": "B",
           "explanation": "REST is een stijl/constraint set voor gedistribueerde webservices (resources, stateless, HTTP methods).",
           "difficulty": "easy",
-          "tags": ["api", "rest"],
+          "tags": [
+            "api",
+            "rest"
+          ],
           "is_backup": false
         },
         {
@@ -915,7 +2808,9 @@
           "correct_answer": "A",
           "explanation": "CRUD mappen doorgaans naar GET (read), POST (create), PUT/PATCH (update), DELETE (delete).",
           "difficulty": "easy",
-          "tags": ["http"],
+          "tags": [
+            "http"
+          ],
           "is_backup": false
         },
         {
@@ -930,7 +2825,9 @@
           "correct_answer": "B",
           "explanation": "CORS bepaalt welke origins toegang hebben tot resources via headers.",
           "difficulty": "medium",
-          "tags": ["web_security"],
+          "tags": [
+            "web_security"
+          ],
           "is_backup": false
         },
         {
@@ -945,7 +2842,9 @@
           "correct_answer": "B",
           "explanation": "SPA laadt resources één keer en update de view via JS/DOM-manipulatie.",
           "difficulty": "medium",
-          "tags": ["frontend"],
+          "tags": [
+            "frontend"
+          ],
           "is_backup": false
         },
         {
@@ -960,7 +2859,10 @@
           "correct_answer": "B",
           "explanation": "Semantische tags verbeteren toegankelijkheid, SEO en onderhoudbaarheid.",
           "difficulty": "easy",
-          "tags": ["html", "accessibility"],
+          "tags": [
+            "html",
+            "accessibility"
+          ],
           "is_backup": false
         },
         {
@@ -975,7 +2877,10 @@
           "correct_answer": "A",
           "explanation": "Responsive = vloeiende layout; adaptive = meerdere vaste layouts voor breakpoints.",
           "difficulty": "medium",
-          "tags": ["css", "design"],
+          "tags": [
+            "css",
+            "design"
+          ],
           "is_backup": false
         },
         {
@@ -990,8 +2895,279 @@
           "correct_answer": "A",
           "explanation": "Content Delivery Networks cachen statische assets en verlagen laadtijden wereldwijd.",
           "difficulty": "easy",
-          "tags": ["performance"],
+          "tags": [
+            "performance"
+          ],
           "is_backup": true
+        },
+        {
+          "id": 163,
+          "question": "Welke HTML-tag gebruik je voor de belangrijkste kop op een pagina?",
+          "choices": {
+            "A": "<p>",
+            "B": "<h1>",
+            "C": "<title>",
+            "D": "<header>"
+          },
+          "correct_answer": "B",
+          "explanation": "<h1> is de hoogste niveau heading op de pagina.",
+          "difficulty": "easy",
+          "tags": [
+            "html"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 164,
+          "question": "Welke CSS-eigenschap gebruik je om een element flexbox-layout te geven?",
+          "choices": {
+            "A": "display: flex;",
+            "B": "position: flex;",
+            "C": "layout: flex;",
+            "D": "flex-mode: on;"
+          },
+          "correct_answer": "A",
+          "explanation": "Met display: flex; wordt een flex-container gedefinieerd.",
+          "difficulty": "easy",
+          "tags": [
+            "css",
+            "layout"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 165,
+          "question": "Wat is het doel van de 'alt'-attribuut bij een <img>-tag?",
+          "choices": {
+            "A": "De grootte van de afbeelding bepalen",
+            "B": "Fallback tekst geven voor toegankelijkheid en wanneer de afbeelding niet geladen kan worden",
+            "C": "De kleur van de afbeelding instellen",
+            "D": "De afbeelding centreren"
+          },
+          "correct_answer": "B",
+          "explanation": "Alt-tekst helpt screenreaders en wordt getoond als de afbeelding niet laadt.",
+          "difficulty": "easy",
+          "tags": [
+            "html",
+            "accessibility"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 166,
+          "question": "Wat is het verschil tussen '=='' en '===' in JavaScript?",
+          "choices": {
+            "A": "Er is geen verschil",
+            "B": "== vergelijkt met typecoercion; === vergelijkt zonder typeconversie",
+            "C": "=== is langzamer maar veiliger",
+            "D": "== wordt alleen in Node.js gebruikt"
+          },
+          "correct_answer": "B",
+          "explanation": "=== is de 'strict equality' operator zonder impliciete typeconversie.",
+          "difficulty": "medium",
+          "tags": [
+            "javascript",
+            "operators"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 167,
+          "question": "Wat is 'DOM' in webdevelopment?",
+          "choices": {
+            "A": "Een database",
+            "B": "Een objectmodel van de HTML-structuur in de browser",
+            "C": "Een type webserver",
+            "D": "Een CSS-framework"
+          },
+          "correct_answer": "B",
+          "explanation": "De Document Object Model representeert de pagina als boomstructuur die met JS te manipuleren is.",
+          "difficulty": "easy",
+          "tags": [
+            "dom",
+            "frontend"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 168,
+          "question": "Wat is 'minification' van CSS/JS-bestanden?",
+          "choices": {
+            "A": "Het vergroten van bestanden",
+            "B": "Het verwijderen van whitespace en comments om bestanden kleiner te maken",
+            "C": "Het versleutelen van bestanden",
+            "D": "Het comprimeren in zip-formaat"
+          },
+          "correct_answer": "B",
+          "explanation": "Minification verkleint bestanden zodat ze sneller geladen worden.",
+          "difficulty": "easy",
+          "tags": [
+            "performance",
+            "frontend"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 169,
+          "question": "Welke HTTP-statuscode betekent 'Niet gevonden'?",
+          "choices": {
+            "A": "200",
+            "B": "301",
+            "C": "404",
+            "D": "500"
+          },
+          "correct_answer": "C",
+          "explanation": "404 Not Found wordt geretourneerd als de resource niet bestaat.",
+          "difficulty": "easy",
+          "tags": [
+            "http",
+            "statuscodes"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 170,
+          "question": "Wat betekent 'idempotent' voor een HTTP-method?",
+          "choices": {
+            "A": "De methode kan maar één keer uitgevoerd worden",
+            "B": "Meerdere identieke requests hebben hetzelfde effect als één request",
+            "C": "De methode is alleen read-only",
+            "D": "Alleen POST is idempotent"
+          },
+          "correct_answer": "B",
+          "explanation": "Bij idempotente methoden maakt het niet uit hoe vaak je ze uitvoert, het resultaat blijft hetzelfde.",
+          "difficulty": "medium",
+          "tags": [
+            "http",
+            "rest"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 171,
+          "question": "Wat doet de 'viewport meta tag' in HTML voor mobiele apparaten?",
+          "choices": {
+            "A": "Zorgt voor cookies",
+            "B": "Bepaalt hoe de pagina geschaald wordt op mobiele schermen",
+            "C": "Laadt JavaScript sneller",
+            "D": "Voegt SEO-keywords toe"
+          },
+          "correct_answer": "B",
+          "explanation": "De viewport-tag beïnvloedt zoom en schaal van de pagina op mobiele devices.",
+          "difficulty": "medium",
+          "tags": [
+            "html",
+            "responsive"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 172,
+          "question": "Wat is het doel van 'lazy loading' van afbeeldingen?",
+          "choices": {
+            "A": "Afbeeldingen direct op maximale resolutie laden",
+            "B": "Afbeeldingen pas laden wanneer ze in beeld komen",
+            "C": "Afbeeldingen offline beschikbaar maken",
+            "D": "Afbeeldingen in een andere taal tonen"
+          },
+          "correct_answer": "B",
+          "explanation": "Lazy loading verbetert performance door alleen zichtbare content te laden.",
+          "difficulty": "medium",
+          "tags": [
+            "performance",
+            "frontend"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 173,
+          "question": "Wat doet de 'fetch API' in moderne browsers?",
+          "choices": {
+            "A": "CSS compileren",
+            "B": "HTTP-requests maken vanuit JavaScript",
+            "C": "LocalStorage beheren",
+            "D": "DOM-elementen stylen"
+          },
+          "correct_answer": "B",
+          "explanation": "Fetch is een moderne API voor asynchrone HTTP-requests in JS.",
+          "difficulty": "medium",
+          "tags": [
+            "javascript",
+            "http"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 174,
+          "question": "Wat is een 'service worker' in web apps?",
+          "choices": {
+            "A": "Een database-server",
+            "B": "Een script dat in de browser op de achtergrond draait en o.a. caching/offline ondersteunt",
+            "C": "Een CSS-preprocessor",
+            "D": "Een load balancer"
+          },
+          "correct_answer": "B",
+          "explanation": "Service workers maken progressive web apps mogelijk met offline caching en push notifications.",
+          "difficulty": "medium",
+          "tags": [
+            "pwa",
+            "frontend"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 175,
+          "question": "Wat is het doel van een build-pipeline in CI/CD?",
+          "choices": {
+            "A": "Handmatig deployen",
+            "B": "Automatisch bouwen, testen en eventueel deployen van code",
+            "C": "Alleen code reviewen",
+            "D": "Alleen databases beheren"
+          },
+          "correct_answer": "B",
+          "explanation": "Pipelines automatiseren de stappen van build tot deploy.",
+          "difficulty": "easy",
+          "tags": [
+            "ci_cd",
+            "pipelines"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 215,
+          "question": "Wat is een API endpoint?",
+          "choices": {
+            "A": "Een URL waar een specifieke API-functie bereikbaar is",
+            "B": "Een databaseverbinding",
+            "C": "Een frontendcomponent",
+            "D": "Een HTTP-statuscode"
+          },
+          "correct_answer": "A",
+          "explanation": "Een endpoint is een specifieke URL die een API-functionaliteit aanbiedt.",
+          "difficulty": "medium",
+          "tags": [
+            "api",
+            "web"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 216,
+          "question": "Wat betekent CI in CI/CD?",
+          "choices": {
+            "A": "Continuous Integration",
+            "B": "Central Instance",
+            "C": "Code Injection",
+            "D": "Container Infrastructure"
+          },
+          "correct_answer": "A",
+          "explanation": "CI automatiseert het samenvoegen en testen van nieuwe codewijzigingen.",
+          "difficulty": "easy",
+          "tags": [
+            "ci_cd",
+            "devops"
+          ],
+          "is_backup": false
         }
       ]
     },
@@ -1011,7 +3187,9 @@
           "correct_answer": "B",
           "explanation": "CI = Continuous Integration: code frequent samenvoegen en automatisch testen.",
           "difficulty": "easy",
-          "tags": ["ci_cd"],
+          "tags": [
+            "ci_cd"
+          ],
           "is_backup": false
         },
         {
@@ -1026,7 +3204,9 @@
           "correct_answer": "A",
           "explanation": "Docker is de populairste container runtime/engine.",
           "difficulty": "easy",
-          "tags": ["containers"],
+          "tags": [
+            "containers"
+          ],
           "is_backup": false
         },
         {
@@ -1041,7 +3221,9 @@
           "correct_answer": "B",
           "explanation": "IaC definieert infrastructuur in code (bv. Terraform, CloudFormation).",
           "difficulty": "medium",
-          "tags": ["iac"],
+          "tags": [
+            "iac"
+          ],
           "is_backup": false
         },
         {
@@ -1056,7 +3238,9 @@
           "correct_answer": "B",
           "explanation": "Blue-green reduceert downtime door traffic te verplaatsen van oude naar nieuwe omgeving.",
           "difficulty": "medium",
-          "tags": ["deployment"],
+          "tags": [
+            "deployment"
+          ],
           "is_backup": false
         },
         {
@@ -1071,7 +3255,10 @@
           "correct_answer": "B",
           "explanation": "Linting automatiseert stijl- en kwaliteitsregels in de pipeline.",
           "difficulty": "easy",
-          "tags": ["ci", "quality"],
+          "tags": [
+            "ci",
+            "quality"
+          ],
           "is_backup": false
         },
         {
@@ -1086,7 +3273,9 @@
           "correct_answer": "B",
           "explanation": "Kubernetes beheert container lifecycle, scaling, networking, enz.",
           "difficulty": "medium",
-          "tags": ["kubernetes"],
+          "tags": [
+            "kubernetes"
+          ],
           "is_backup": true
         },
         {
@@ -1101,8 +3290,281 @@
           "correct_answer": "B",
           "explanation": "Health checks detecteren of een service klaar is om verkeer te ontvangen.",
           "difficulty": "easy",
-          "tags": ["monitoring"],
+          "tags": [
+            "monitoring"
+          ],
           "is_backup": true
+        },
+        {
+          "id": 176,
+          "question": "Wat is het voordeel van 'immutable infrastructure'?",
+          "choices": {
+            "A": "Servers worden on-the-fly gepatcht",
+            "B": "Servers worden niet gewijzigd maar vervangen, waardoor configuratiedrift wordt voorkomen",
+            "C": "Je hebt geen versiebeheer meer nodig",
+            "D": "Alle logs worden automatisch verwijderd"
+          },
+          "correct_answer": "B",
+          "explanation": "Immutable infra voorkomt afwijkingen door altijd nieuwe identieke instances te deployen.",
+          "difficulty": "medium",
+          "tags": [
+            "devops",
+            "infrastructure"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 177,
+          "question": "Wat is een 'artifact' in CI/CD-context?",
+          "choices": {
+            "A": "Broncode in de repository",
+            "B": "Het resultaat van een build, zoals een pakket of container image",
+            "C": "Een mislukte deployment",
+            "D": "Een testscript"
+          },
+          "correct_answer": "B",
+          "explanation": "Artifacts zijn de output van builds die worden gedeployed of hergebruikt.",
+          "difficulty": "easy",
+          "tags": [
+            "ci_cd",
+            "build"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 178,
+          "question": "Wat doet 'rolling deployment'?",
+          "choices": {
+            "A": "Stopt alle oude instances tegelijk en start nieuwe",
+            "B": "Vervangt instances stapsgewijs zodat de dienst beschikbaar blijft",
+            "C": "Maakt alleen een backup",
+            "D": "Werkt alleen in development"
+          },
+          "correct_answer": "B",
+          "explanation": "Rolling deployments wisselen oude versies geleidelijk om voor nieuwe.",
+          "difficulty": "medium",
+          "tags": [
+            "deployment",
+            "devops"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 179,
+          "question": "Wat is het doel van 'log aggregation' in een DevOps-omgeving?",
+          "choices": {
+            "A": "Logs verwijderen",
+            "B": "Logs van meerdere services centraliseren voor analyse en monitoring",
+            "C": "Logs versleutelen voor security",
+            "D": "Logs verbergen"
+          },
+          "correct_answer": "B",
+          "explanation": "Log aggregation maakt het eenvoudiger om problemen te onderzoeken over meerdere services heen.",
+          "difficulty": "medium",
+          "tags": [
+            "monitoring",
+            "logging",
+            "devops"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 180,
+          "question": "Wat is het voordeel van 'infrastructure as code' voor teams?",
+          "choices": {
+            "A": "Geen documentatie meer nodig",
+            "B": "Infra-configuratie is versieerbaar, reproduceerbaar en automatiseerbaar",
+            "C": "Infra kan niet meer kapot",
+            "D": "Je hebt geen cloudprovider meer nodig"
+          },
+          "correct_answer": "B",
+          "explanation": "IaC maakt infra beheersbaar zoals code: versiecontrole, review en automatisering.",
+          "difficulty": "easy",
+          "tags": [
+            "iac",
+            "devops"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 181,
+          "question": "Wat is 'observability' in moderne systemen?",
+          "choices": {
+            "A": "Het aantal servers tellen",
+            "B": "De mate waarin je het interne gedrag via logs, metrics en traces kunt begrijpen",
+            "C": "Alleen uptime meten",
+            "D": "Alleen errorlogs bekijken"
+          },
+          "correct_answer": "B",
+          "explanation": "Observability combineert metrics, logs en traces om systemen beter te begrijpen.",
+          "difficulty": "medium",
+          "tags": [
+            "observability",
+            "monitoring"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 182,
+          "question": "Wat is een 'canary release'?",
+          "choices": {
+            "A": "Een release die alleen in test draait",
+            "B": "Een release die naar een kleine subset gebruikers gaat om risico te beperken",
+            "C": "Een rollback-methode",
+            "D": "Een database-upgrade"
+          },
+          "correct_answer": "B",
+          "explanation": "Canary releases sturen eerst een kleine hoeveelheid verkeer naar de nieuwe versie.",
+          "difficulty": "medium",
+          "tags": [
+            "deployment",
+            "devops"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 183,
+          "question": "Waarom is 'shift-left testing' belangrijk?",
+          "choices": {
+            "A": "Tests worden later in het proces gedaan",
+            "B": "Tests worden vroeger in de ontwikkelcyclus gedaan om fouten eerder te vinden",
+            "C": "Tests worden alleen in productie gedaan",
+            "D": "Tests worden volledig automatisch gegenereerd"
+          },
+          "correct_answer": "B",
+          "explanation": "Shift-left betekent eerder testen, waardoor bugs goedkoper te fixen zijn.",
+          "difficulty": "medium",
+          "tags": [
+            "testing",
+            "devops"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 184,
+          "question": "Wat is een typische metriek om CI-builds te evalueren?",
+          "choices": {
+            "A": "Aantal e-mails per dag",
+            "B": "Buildduur en faalpercentage",
+            "C": "Temperatuur van de serverruimte",
+            "D": "Aantal commits per ontwikkelaar"
+          },
+          "correct_answer": "B",
+          "explanation": "Buildduur en failure rate geven inzicht in stabiliteit en feedbacksnelheid.",
+          "difficulty": "easy",
+          "tags": [
+            "ci_cd",
+            "metrics"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 185,
+          "question": "Wat is 'configuration drift'?",
+          "choices": {
+            "A": "When config files zijn versleuteld",
+            "B": "Wanneer de werkelijke infrastructuurconfig afwijkt van de bedoelde/gedefinieerde config",
+            "C": "Wanneer databases repliceren",
+            "D": "Wanneer logfiles groeien"
+          },
+          "correct_answer": "B",
+          "explanation": "Config drift ontstaat door ad-hoc wijzigingen die niet in code zijn vastgelegd.",
+          "difficulty": "medium",
+          "tags": [
+            "devops",
+            "configuration"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 186,
+          "question": "Wat is een 'runbook' in operations?",
+          "choices": {
+            "A": "Een soort database",
+            "B": "Een handleiding met stappen om veelvoorkomende incidenten of taken af te handelen",
+            "C": "Een logboek van deployments",
+            "D": "Een backuptool"
+          },
+          "correct_answer": "B",
+          "explanation": "Runbooks beschrijven procedures voor operationele taken en incidentrespons.",
+          "difficulty": "easy",
+          "tags": [
+            "devops",
+            "operations"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 187,
+          "question": "Wat beschrijft het 'open/closed principle' in SOLID?",
+          "choices": {
+            "A": "Code moet altijd openstaan voor edits",
+            "B": "Software-entiteiten moeten open staan voor uitbreiding maar gesloten voor modificatie",
+            "C": "Alle klassen moeten public zijn",
+            "D": "Geen interfaces gebruiken"
+          },
+          "correct_answer": "B",
+          "explanation": "OCP stimuleert uitbreidbaarheid via bijv. overerving of compositie in plaats van bestaande code te wijzigen.",
+          "difficulty": "medium",
+          "tags": [
+            "s.o.l.i.d",
+            "design_principles"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 188,
+          "question": "Wat is het verschil tussen 'coupling' en 'cohesion'?",
+          "choices": {
+            "A": "Coupling gaat over interne samenhang; cohesion over afhankelijkheden",
+            "B": "Coupling gaat over afhankelijkheden tussen modules; cohesion over samenhang binnen een module",
+            "C": "Ze betekenen hetzelfde",
+            "D": "Cohesion is alleen voor databases"
+          },
+          "correct_answer": "B",
+          "explanation": "Lage coupling en hoge cohesion zijn gewenst in goed ontwerp.",
+          "difficulty": "medium",
+          "tags": [
+            "architecture",
+            "design"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 217,
+          "question": "Wat is het nut van hashing in beveiliging?",
+          "choices": {
+            "A": "Vertraagt de uitvoering van programma’s",
+            "B": "Verandert data onomkeerbaar om integriteit te controleren",
+            "C": "Verkleint bestanden zonder informatieverlies",
+            "D": "Maakt gegevens leesbaar voor iedereen"
+          },
+          "correct_answer": "B",
+          "explanation": "Hashes worden gebruikt om data te verifiëren zonder originele inhoud bloot te geven.",
+          "difficulty": "medium",
+          "tags": [
+            "security",
+            "hashing"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 218,
+          "question": "Wat betekent het acroniem CRUD?",
+          "choices": {
+            "A": "Create, Read, Update, Delete",
+            "B": "Copy, Rename, Undo, Download",
+            "C": "Compile, Run, Use, Debug",
+            "D": "Cache, Render, Upload, Display"
+          },
+          "correct_answer": "A",
+          "explanation": "CRUD beschrijft de vier basishandelingen op data in databases of API’s.",
+          "difficulty": "easy",
+          "tags": [
+            "database",
+            "api"
+          ],
+          "is_backup": false
         }
       ]
     },
@@ -1122,7 +3584,10 @@
           "correct_answer": "B",
           "explanation": "SRP zegt dat een klasse één verantwoordelijkheid/reden tot verandering zou moeten hebben.",
           "difficulty": "medium",
-          "tags": ["design_principles", "s.o.l.i.d"],
+          "tags": [
+            "design_principles",
+            "s.o.l.i.d"
+          ],
           "is_backup": false
         },
         {
@@ -1137,7 +3602,9 @@
           "correct_answer": "B",
           "explanation": "Refactoren verbetert leesbaarheid/onderhoud zonder functionaliteit te veranderen.",
           "difficulty": "easy",
-          "tags": ["refactoring"],
+          "tags": [
+            "refactoring"
+          ],
           "is_backup": false
         },
         {
@@ -1152,7 +3619,9 @@
           "correct_answer": "B",
           "explanation": "Technical debt ontstaat door shortcuts die later onderhoudskosten verhogen.",
           "difficulty": "medium",
-          "tags": ["process"],
+          "tags": [
+            "process"
+          ],
           "is_backup": false
         },
         {
@@ -1167,7 +3636,9 @@
           "correct_answer": "A",
           "explanation": "Unit tests controleren kleine eenheden (functies/classes) onafhankelijk.",
           "difficulty": "easy",
-          "tags": ["testing"],
+          "tags": [
+            "testing"
+          ],
           "is_backup": false
         },
         {
@@ -1182,7 +3653,9 @@
           "correct_answer": "B",
           "explanation": "Design patterns zijn gedocumenteerde oplossingspatronen (bv. Singleton, Observer).",
           "difficulty": "medium",
-          "tags": ["patterns"],
+          "tags": [
+            "patterns"
+          ],
           "is_backup": false
         },
         {
@@ -1197,7 +3670,9 @@
           "correct_answer": "B",
           "explanation": "Separation of concerns vermindert koppeling en vergemakkelijkt onderhoud.",
           "difficulty": "medium",
-          "tags": ["architecture"],
+          "tags": [
+            "architecture"
+          ],
           "is_backup": false
         },
         {
@@ -1212,7 +3687,10 @@
           "correct_answer": "A",
           "explanation": "Code reviews vinden bugs, delen kennis en verbeteren codekwaliteit.",
           "difficulty": "easy",
-          "tags": ["process", "review"],
+          "tags": [
+            "process",
+            "review"
+          ],
           "is_backup": true
         },
         {
@@ -1227,8 +3705,263 @@
           "correct_answer": "B",
           "explanation": "Pair programming bevordert directe samenwerking en kwaliteitsbewaking.",
           "difficulty": "easy",
-          "tags": ["agile", "teamwork"],
+          "tags": [
+            "agile",
+            "teamwork"
+          ],
           "is_backup": true
+        },
+        {
+          "id": 189,
+          "question": "Wat is 'continuous refactoring'?",
+          "choices": {
+            "A": "Refactoren verbieden",
+            "B": "Regelmatig kleine verbeteringen aanbrengen in de codebasis",
+            "C": "Pas refactoren aan het einde van het project",
+            "D": "Alles in één keer herschrijven"
+          },
+          "correct_answer": "B",
+          "explanation": "Door continu kleine refactorings te doen blijft de codebase gezond en beheersbaar.",
+          "difficulty": "easy",
+          "tags": [
+            "refactoring",
+            "process"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 190,
+          "question": "Wat is het verschil tussen unit tests en integration tests?",
+          "choices": {
+            "A": "Er is geen verschil",
+            "B": "Unit tests testen kleine onderdelen geïsoleerd; integration tests testen samenwerkende componenten",
+            "C": "Integration tests zijn altijd sneller",
+            "D": "Unit tests draaien alleen in productie"
+          },
+          "correct_answer": "B",
+          "explanation": "Unit vs integration gaat over de grootte en samenhang van wat er getest wordt.",
+          "difficulty": "easy",
+          "tags": [
+            "testing"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 191,
+          "question": "Wat is 'YAGNI' in software engineering?",
+          "choices": {
+            "A": "You Aren't Going to Need It: bouw geen features voordat ze echt nodig zijn",
+            "B": "You Always Generate New Ideas",
+            "C": "Yet Another Great New Interface",
+            "D": "You Already Got New Inputs"
+          },
+          "correct_answer": "A",
+          "explanation": "YAGNI waarschuwt tegen over-engineering en ongebruikte features.",
+          "difficulty": "medium",
+          "tags": [
+            "principles",
+            "process"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 192,
+          "question": "Wat is het nut van user stories in agile ontwikkeling?",
+          "choices": {
+            "A": "Technische details vastleggen",
+            "B": "Businesswaarde en gebruikersbehoeften in simpele taal beschrijven",
+            "C": "Database-schema's tekenen",
+            "D": "Systeemlogs documenteren"
+          },
+          "correct_answer": "B",
+          "explanation": "User stories beschrijven functionaliteit vanuit perspectief van de gebruiker.",
+          "difficulty": "easy",
+          "tags": [
+            "agile",
+            "requirements"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 193,
+          "question": "Wat is een 'antipattern' in software design?",
+          "choices": {
+            "A": "Een goed gedocumenteerde best practice",
+            "B": "Een veelvoorkomende maar slechte oplossing voor een probleem",
+            "C": "Een design pattern voor testen",
+            "D": "Een patroon voor loggen"
+          },
+          "correct_answer": "B",
+          "explanation": "Antipatterns zijn vaak gebruikte oplossingen die uiteindelijk meer kwaad dan goed doen.",
+          "difficulty": "medium",
+          "tags": [
+            "patterns",
+            "design"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 194,
+          "question": "Wat is het doel van 'acceptance testing'?",
+          "choices": {
+            "A": "Testen of de code compileert",
+            "B": "Testen of het systeem voldoet aan de eisen van de klant/gebruiker",
+            "C": "Testen van individuele functies",
+            "D": "Load testen op hoge belasting"
+          },
+          "correct_answer": "B",
+          "explanation": "Acceptance tests valideren dat de opgeleverde software de afgesproken requirements haalt.",
+          "difficulty": "easy",
+          "tags": [
+            "testing",
+            "acceptance"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 195,
+          "question": "Wat is 'bus factor' in een team?",
+          "choices": {
+            "A": "Hoeveel bussen het bedrijf bezit",
+            "B": "Hoeveel mensen uitvallen kan het team overleven voordat kennis verloren gaat",
+            "C": "Hoeveel bugs per sprint",
+            "D": "Hoeveel builds per dag"
+          },
+          "correct_answer": "B",
+          "explanation": "Een lage bus factor betekent dat kennis bij weinig mensen geconcentreerd is.",
+          "difficulty": "medium",
+          "tags": [
+            "teamwork",
+            "risk"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 196,
+          "question": "Wat is 'test-driven development' (TDD)?",
+          "choices": {
+            "A": "Eerst code schrijven, dan tests",
+            "B": "Eerst tests schrijven, dan code die de tests laat slagen",
+            "C": "Tests alleen handmatig uitvoeren",
+            "D": "Geen refactoring toestaan"
+          },
+          "correct_answer": "B",
+          "explanation": "Bij TDD worden tests eerst geschreven en daarna minimale code om ze te laten slagen.",
+          "difficulty": "medium",
+          "tags": [
+            "tdd",
+            "testing"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 197,
+          "question": "Waarom zijn code reviews ook goed voor kennisdeling?",
+          "choices": {
+            "A": "Alleen de reviewer leert iets",
+            "B": "Ontwikkelaars zien elkaars aanpak en patronen, waardoor kennis wordt verspreid",
+            "C": "Ze vervangen documentatie volledig",
+            "D": "Ze maken pair programming overbodig"
+          },
+          "correct_answer": "B",
+          "explanation": "Door elkaars code te lezen, leren teamleden van elkaars oplossingen en stijl.",
+          "difficulty": "easy",
+          "tags": [
+            "review",
+            "teamwork"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 198,
+          "question": "Wat is 'continuous delivery'?",
+          "choices": {
+            "A": "Altijd direct in productie deployen zonder controle",
+            "B": "Zorgen dat de software altijd in een releasable staat is en op elk moment gedeployed kán worden",
+            "C": "Dagelijks handmatig deployen",
+            "D": "Alleen in het weekend releasen"
+          },
+          "correct_answer": "B",
+          "explanation": "Continuous delivery automatiseert tot net vóór productie; release is een bewuste knopdruk.",
+          "difficulty": "medium",
+          "tags": [
+            "ci_cd"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 199,
+          "question": "Wat is 'pair programming' volgens het XP-principe?",
+          "choices": {
+            "A": "Twee teams werken aan verschillende features",
+            "B": "Twee ontwikkelaars werken samen aan dezelfde code, één typt en één reviewt live",
+            "C": "Eén ontwikkelaar schrijft tests, de ander nooit",
+            "D": "Twee ontwikkelaars werken op verschillende branches"
+          },
+          "correct_answer": "B",
+          "explanation": "Bij pair programming heb je een 'driver' en een 'navigator' die continu samenwerken.",
+          "difficulty": "easy",
+          "tags": [
+            "agile",
+            "xp",
+            "teamwork"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 200,
+          "question": "Wat is het belangrijkste voordeel van kleine, frequente releases?",
+          "choices": {
+            "A": "Grotere risico's per release",
+            "B": "Minder zichtbare veranderingen voor gebruikers",
+            "C": "Minder risico per release en snellere feedback",
+            "D": "Release-notes zijn niet meer nodig"
+          },
+          "correct_answer": "C",
+          "explanation": "Kleine releases zijn beter beheersbaar, eenvoudiger terug te draaien en geven snelle feedback.",
+          "difficulty": "easy",
+          "tags": [
+            "release_management",
+            "process"
+          ],
+          "is_backup": true
+        },
+        {
+          "id": 219,
+          "question": "Wat doet het 'ping'-commando?",
+          "choices": {
+            "A": "Test of een netwerkhost bereikbaar is",
+            "B": "Maakt een nieuwe netwerkverbinding",
+            "C": "Maakt een IP-adres aan",
+            "D": "Wijzigt routerinstellingen"
+          },
+          "correct_answer": "A",
+          "explanation": "Ping stuurt ICMP-pakketten om de connectiviteit en latency te testen.",
+          "difficulty": "easy",
+          "tags": [
+            "netwerk",
+            "tools"
+          ],
+          "is_backup": false
+        },
+        {
+          "id": 220,
+          "question": "Wat is het verschil tussen encryptie en hashing?",
+          "choices": {
+            "A": "Encryptie is omkeerbaar, hashing niet",
+            "B": "Hashing gebruikt sleutels, encryptie niet",
+            "C": "Hashing is trager dan encryptie",
+            "D": "Er is geen verschil"
+          },
+          "correct_answer": "A",
+          "explanation": "Encryptie kan worden teruggedraaid met een sleutel, hashing is eenrichtingsverkeer.",
+          "difficulty": "medium",
+          "tags": [
+            "security",
+            "encryptie",
+            "hashing"
+          ],
+          "is_backup": false
         }
       ]
     }

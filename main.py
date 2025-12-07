@@ -1,9 +1,14 @@
-# main.py
+# main_old.py
+
 import sys
+import os
+
+from PyQt6.QtGui import QKeyEvent
 from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout, QPushButton
 from PyQt6.QtCore import Qt
 
-from auth import AuthWindow  # <-- nieuw
+from auth import AuthWindow
+
 
 class StartWindow(QWidget):
     def __init__(self):
@@ -12,14 +17,19 @@ class StartWindow(QWidget):
 
     def init_ui(self):
         self.setWindowTitle("QuizPy")
-        self.setGeometry(800, 800, 780, 915)
-        self.setStyleSheet("""
-            QWidget {
-                background-image: url(assets/achtergrond.jpg);
+        self.resize(780, 915)
+        bg_path = os.path.join(os.path.dirname(__file__), "assets", "achtergrond.jpg")
+
+        if not os.path.exists(bg_path):
+            print("ERROR: achtergrond niet gevonden:", bg_path)
+
+        self.setStyleSheet(f"""
+            QWidget {{
+                background-image: url("{bg_path.replace('\\', '/')}");
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
-            }
+            }}
         """)
 
         layout = QVBoxLayout()
@@ -38,21 +48,30 @@ class StartWindow(QWidget):
         layout.addWidget(label, alignment=Qt.AlignmentFlag.AlignCenter)
 
         button = QPushButton("Start")
-        # (je style van eerder kan je hier 1-op-1 hergebruiken)
         button.clicked.connect(self.open_auth)
         layout.addWidget(button, alignment=Qt.AlignmentFlag.AlignCenter)
+
+        exit_button = QPushButton("Exit")
+        exit_button.clicked.connect(self.close)
+        layout.addWidget(exit_button, alignment=Qt.AlignmentFlag.AlignCenter)
 
         layout.addStretch()
         self.setLayout(layout)
 
     def open_auth(self):
         self.auth_window = AuthWindow()
-        self.auth_window.show()
-        self.close()
+        self.auth_window.showFullScreen()
+        self.hide()
+
+    def keyPressEvent(self, event: QKeyEvent):
+        if event.key() == Qt.Key.Key_Escape:
+            self.close()
+        else:
+            super().keyPressEvent(event)
 
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = StartWindow()
-    window.show()
+    window.showFullScreen()
     sys.exit(app.exec())
