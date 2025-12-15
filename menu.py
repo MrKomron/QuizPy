@@ -1,12 +1,12 @@
-# start_quiz.py
+# menu.py
 # Dit behandelt het menu van de game.
 
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFont, QKeyEvent
 from PyQt6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QMessageBox, QGridLayout, QSpacerItem, QSizePolicy
 
-from level import LevelWindow
 from database import Database
+from level import LevelWindow
 
 import json
 import os
