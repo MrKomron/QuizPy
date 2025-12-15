@@ -1,9 +1,9 @@
 # main.py
 # Dit is het startpunt van het programma.
 
+from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QKeyEvent
 from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout, QPushButton
-from PyQt6.QtCore import Qt
 
 from auth import AuthWindow
 
