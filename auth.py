@@ -8,7 +8,7 @@ from PyQt6.QtGui import QKeyEvent
 from PyQt6.QtWidgets import QWidget, QLineEdit, QVBoxLayout, QPushButton,QLabel, QMessageBox
 
 from database import Database
-from start_quiz import QuizWindow
+from menu import QuizWindow
 
 
 class AuthWindow(QWidget):
