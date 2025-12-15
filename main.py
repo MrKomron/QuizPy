@@ -1,7 +1,5 @@
-# main_old.py
-
-import sys
-import os
+# main.py
+# Dit is het startpunt van het programma.
 
 from PyQt6.QtGui import QKeyEvent
 from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout, QPushButton
@@ -9,29 +7,19 @@ from PyQt6.QtCore import Qt
 
 from auth import AuthWindow
 
+import sys
+
 
 class StartWindow(QWidget):
     def __init__(self):
         super().__init__()
         self.init_ui()
 
+    # Opzetten van de pagina.
     def init_ui(self):
         self.setWindowTitle("QuizPy")
         self.resize(780, 915)
-        bg_path = os.path.join(os.path.dirname(__file__), "assets", "achtergrond.jpg")
-
-        if not os.path.exists(bg_path):
-            print("ERROR: achtergrond niet gevonden:", bg_path)
-
-        self.setStyleSheet(f"""
-            QWidget {{
-                background-image: url("{bg_path.replace('\\', '/')}");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }}
-        """)
-
+        
         layout = QVBoxLayout()
         layout.setContentsMargins(24, 24, 24, 24)
         layout.addStretch()
@@ -58,18 +46,20 @@ class StartWindow(QWidget):
         layout.addStretch()
         self.setLayout(layout)
 
+    # Registratie-/loginpagina starten
     def open_auth(self):
         self.auth_window = AuthWindow()
         self.auth_window.showFullScreen()
         self.hide()
 
+    # Programma afsluiten als de gebruiker op ESC drukt.
     def keyPressEvent(self, event: QKeyEvent):
         if event.key() == Qt.Key.Key_Escape:
             self.close()
         else:
             super().keyPressEvent(event)
 
-
+# Starten van het programma
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = StartWindow()
