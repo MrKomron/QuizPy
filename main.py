@@ -24,7 +24,7 @@ class StartWindow(QWidget):
         layout.setContentsMargins(24, 24, 24, 24)
         layout.addStretch()
 
-        label = QLabel("Welcome to QuizPy!")
+        label = QLabel("Welkom bij QuizPy!")
         label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         label.setWordWrap(True)
         label.setStyleSheet("""
@@ -35,11 +35,11 @@ class StartWindow(QWidget):
         """)
         layout.addWidget(label, alignment=Qt.AlignmentFlag.AlignCenter)
 
-        button = QPushButton("Start")
+        button = QPushButton("Starten")
         button.clicked.connect(self.open_auth)
         layout.addWidget(button, alignment=Qt.AlignmentFlag.AlignCenter)
 
-        exit_button = QPushButton("Exit")
+        exit_button = QPushButton("Afsluiten")
         exit_button.clicked.connect(self.close)
         layout.addWidget(exit_button, alignment=Qt.AlignmentFlag.AlignCenter)
 
