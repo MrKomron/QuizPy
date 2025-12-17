@@ -1,5 +1,5 @@
 # auth.py
-# Dit behandelt het registreren en inloggen op de registratie-/loginpagina.
+# Dit behandelt het registreren en inloggen op de registratie- en loginpagina.
 
 import sqlite3
 
