@@ -15,11 +15,11 @@ class Database:
 
         # Tabellen aanmaken.
         current.execute("""
-        CREATE TABLE IF NOT EXISTS users(
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        username TEXT UNIQUE NOT NULL,
-        password TEXT NOT NULL,
-        level INTEGER DEFAULT 1
+            CREATE TABLE IF NOT EXISTS users (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            username TEXT UNIQUE NOT NULL,
+            password TEXT NOT NULL,
+            level INTEGER DEFAULT 1
         )
         """)
 
@@ -37,7 +37,7 @@ class Database:
 
     def add_user(self,username, password):
         current=self.connection.cursor()
-        current.execute("INSERT INTO users (username,password) VALUES (?,?)",(username, password))
+        current.execute("INSERT INTO users (username,password) VALUES (?,?)", (username, password))
         self.connection.commit()
 
     def get_user(self,username, password):
@@ -57,10 +57,7 @@ class Database:
 
         # Als er nog geen score is voor een bepaald level wordt de highscore sowieso gezet.
         if row is None:
-            current.execute("""
-                INSERT INTO level_scores (user_id, level, highscore)
-                VALUES (?, ?, ?)
-            """, (user_id, level, score))
+            current.execute("INSERT INTO level_scores (user_id, level, highscore) VALUES (?, ?, ?)", (user_id, level, score))
             
         # Als er wel al een score is voor een bepaald level, highscore alleen aanpassen als de score hoger is.
         elif score > row["highscore"]:
@@ -74,8 +71,6 @@ class Database:
 
     def get_statistics(self, user_id):
         current = self.connection.cursor()
-        current.execute("""
-            SELECT level, highscore FROM level_scores WHERE user_id = ?
-        """, (user_id,))
+        current.execute("SELECT level, highscore FROM level_scores WHERE user_id = ?", (user_id,))
         
         return current.fetchall()
