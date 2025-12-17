@@ -11,11 +11,11 @@ import random
 
 
 class LevelWindow(QWidget):
-    def __init__(self, level_num, database, parent=None):
+    def __init__(self, level_number, database, parent=None):
         super().__init__()
         self.database = database
         self.parent_window = parent
-        self.level_num = level_num
+        self.level_number = level_number
         self.questions = []
         self.shuffled_choices = {}
         self.current_question_index = 0
@@ -27,7 +27,7 @@ class LevelWindow(QWidget):
         self.timer.setInterval(1000)
         self.timer.timeout.connect(self.update_timer)
 
-        self.setWindowTitle(f"QuizPy - Level {level_num}")
+        self.setWindowTitle(f"QuizPy - Level {level_number}")
         self.resize(700, 600)
 
         self.load_questions()
@@ -43,11 +43,11 @@ class LevelWindow(QWidget):
 
         # 10 random vragen genereren van het level.
         for level in data.get("levels", []):
-            if level.get("level") == self.level_num:
+            if level.get("level") == self.level_number:
                 questions = level.get("questions", [])
 
                 if len(questions) < 10:
-                    raise ValueError(f"Level {self.level_num} heeft slechts {len(questions)} vragen (minstens 10 vereist)!")
+                    raise ValueError(f"Level {self.level_number} heeft slechts {len(questions)} vragen (minstens 10 vereist)!")
 
                 random.shuffle(questions)
                 self.questions = questions[:10]
@@ -193,7 +193,7 @@ class LevelWindow(QWidget):
         self.feedback_label.setText("")
 
         if self.parent_window:
-            self.parent_window.finish_level(self.level_num, self.score)
+            self.parent_window.finish_level(self.level_number, self.score)
 
         self.next_button.setText("Terug naar Levels")
         self.next_button.clicked.disconnect()
